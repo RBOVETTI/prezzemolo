@@ -11,10 +11,10 @@
     --accent-color: #ffe600;
     --accent-dark: #ccb800;
     --text-color: #2e2e38;
-    --text-light: #666;
-    --bg-color: #ffffff;
-    --bg-light: #fafafa;
-    --border-color: #e5e5e5;
+    --text-light: #5a5a62;
+    --bg-color: #f8f8fa;
+    --bg-light: #ececf0;
+    --border-color: #d8d8dc;
     --shadow: 0 2px 8px rgba(46, 46, 56, 0.08);
     --shadow-hover: 0 4px 12px rgba(46, 46, 56, 0.12);
 }
