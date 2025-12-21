@@ -12,11 +12,11 @@
     --accent-dark: #ccb800;
     --text-color: #2e2e38;
     --text-light: #5a5a62;
-    --bg-color: #f8f8fa;
-    --bg-light: #ececf0;
-    --border-color: #d8d8dc;
-    --shadow: 0 2px 8px rgba(46, 46, 56, 0.08);
-    --shadow-hover: 0 4px 12px rgba(46, 46, 56, 0.12);
+    --bg-color: #e8e8ec;
+    --bg-light: #d4d4d9;
+    --border-color: #c0c0c6;
+    --shadow: 0 2px 8px rgba(46, 46, 56, 0.12);
+    --shadow-hover: 0 4px 12px rgba(46, 46, 56, 0.18);
 }
 
 body {
