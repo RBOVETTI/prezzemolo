@@ -2,35 +2,12 @@
   "articles": [
     {
       "id": 1,
-      "title": "Introduzione all'Intelligenza Artificiale",
-      "description": "Un'analisi approfondita dei concetti fondamentali dell'intelligenza artificiale, dalle reti neurali al machine learning.",
-      "topic": "Tecnologia",
-      "language": "it",
-      "file": "articles/ai-intro-it.pdf"
-    },
-    {
-      "id": 2,
-      "title": "Introduction to Artificial Intelligence",
-      "description": "An in-depth analysis of the fundamental concepts of artificial intelligence, from neural networks to machine learning.",
-      "topic": "Technology",
+      "title": "A(I)gents for Finance: Sci-Fi, reality, and the philosophy of delegated Intelligence",
+      "description": "AI agents will not transform Finance by being smarter, but by being governable. I tried to dismantles the hype around autonomous agents, reframing them as delegated actors embedded in processes, 	roles, and accountability structures. Without integration and stewardship, agents are not innovation, they are organizational risk.",
+      "topic": "AI",
       "language": "en",
-      "file": "articles/ai-intro-en.pdf"
-    },
-    {
-      "id": 3,
-      "title": "Sostenibilità e Futuro",
-      "description": "Riflessioni sulle sfide ambientali contemporanee e le possibili soluzioni per un futuro sostenibile.",
-      "topic": "Ambiente",
-      "language": "it",
-      "file": "articles/sustainability-it.pdf"
-    },
-    {
-      "id": 4,
-      "title": "Sustainability and Future",
-      "description": "Reflections on contemporary environmental challenges and possible solutions for a sustainable future.",
-      "topic": "Environment",
-      "language": "en",
-      "file": "articles/sustainability-en.pdf"
+      "file": "articles/A(I)GENT4FINANCE.pdf"
+  
     }
   ]
 }
