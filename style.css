@@ -6,17 +6,17 @@
 }
 
 :root {
-    --primary-color: #2e2e38;
-    --secondary-color: #2e2e38;
+    --primary-color: #ffe600;
+    --secondary-color: #ffffff;
     --accent-color: #ffe600;
-    --accent-dark: #ccb800;
-    --text-color: #2e2e38;
-    --text-light: #5a5a62;
-    --bg-color: #e8e8ec;
-    --bg-light: #d4d4d9;
-    --border-color: #c0c0c6;
-    --shadow: 0 2px 8px rgba(46, 46, 56, 0.12);
-    --shadow-hover: 0 4px 12px rgba(46, 46, 56, 0.18);
+    --accent-dark: #ffed4d;
+    --text-color: #ffffff;
+    --text-light: #b8b8c0;
+    --bg-color: #3a3a44;
+    --bg-light: #2e2e38;
+    --border-color: #4a4a54;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -145,15 +145,15 @@ select:focus {
 }
 
 .tag.topic {
-    background-color: #fff9cc;
-    color: #2e2e38;
+    background-color: rgba(255, 230, 0, 0.15);
+    color: #ffe600;
     border: 1px solid #ffe600;
 }
 
 .tag.language {
-    background-color: #f5f5f7;
-    color: #2e2e38;
-    border: 1px solid #2e2e38;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid #b8b8c0;
 }
 
 .article-description {
@@ -167,7 +167,7 @@ select:focus {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: var(--accent-color);
-    color: var(--primary-color);
+    color: #2e2e38;
     text-decoration: none;
     border-radius: 4px;
     font-weight: 600;
@@ -178,7 +178,7 @@ select:focus {
 .download-link:hover {
     background-color: var(--accent-dark);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(255, 230, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 230, 0, 0.4);
 }
 
 /* No Results */
