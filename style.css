@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #ffe600;
+    --primary-color: #d4af37;
     --secondary-color: #ffffff;
-    --accent-color: #ffe600;
-    --accent-dark: #ffed4d;
+    --accent-color: #d4af37;
+    --accent-dark: #b8941f;
     --text-color: #ffffff;
     --text-light: #b8b8c0;
     --bg-color: #3a3a44;
@@ -145,9 +145,9 @@ select:focus {
 }
 
 .tag.topic {
-    background-color: rgba(255, 230, 0, 0.15);
-    color: #ffe600;
-    border: 1px solid #ffe600;
+    background-color: rgba(212, 175, 55, 0.15);
+    color: #d4af37;
+    border: 1px solid #d4af37;
 }
 
 .tag.language {
@@ -178,7 +178,7 @@ select:focus {
 .download-link:hover {
     background-color: var(--accent-dark);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 230, 0, 0.4);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
 }
 
 /* No Results */
