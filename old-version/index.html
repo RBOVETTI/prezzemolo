@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Articoli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Biblioteca Articoli</h1>
+            <p class="subtitle">Una raccolta di articoli organizzati per topic e lingua</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filters">
+            <div class="filter-group">
+                <label for="topic-filter">Topic:</label>
+                <select id="topic-filter">
+                    <option value="all">Tutti</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="language-filter">Lingua:</label>
+                <select id="language-filter">
+                    <option value="all">Tutte</option>
+                    <option value="it">Italiano</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="articles-list" class="articles-grid">
+            <!-- Gli articoli verranno caricati dinamicamente qui -->
+        </section>
+
+        <div id="no-results" class="no-results" style="display: none;">
+            <p>Nessun articolo trovato con i filtri selezionati.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - Tutti i diritti riservati</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
