@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -11,11 +11,23 @@ export default function PDFCarousel({ pdfUrl, title }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [pageWidth, setPageWidth] = useState(null);
+
+  // Calcola la dimensione ottimale del PDF in base allo schermo
+  const calculatePDFSize = () => {
+    const maxWidth = Math.min(window.innerWidth - 80, 800);
+    // Usa 70vh per l'altezza massima (lasciando spazio per titolo e indicatori)
+    const maxHeight = window.innerHeight * 0.7;
+
+    // Per PDF quadrati/verticali, usa la dimensione più piccola
+    return Math.min(maxWidth, maxHeight);
+  };
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
     setLoading(false);
     setError(null);
+    setPageWidth(calculatePDFSize());
   }
 
   function onDocumentLoadError(error) {
@@ -53,12 +65,24 @@ export default function PDFCarousel({ pdfUrl, title }) {
     document.addEventListener('touchend', handleTouchEnd);
   };
 
+  // Gestisci resize della finestra
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (numPages) {
+        setPageWidth(calculatePDFSize());
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [numPages]);
+
   return (
-    <div className="flex flex-col items-center py-8 px-4">
-      <h2 className="text-2xl font-bold text-primary mb-6 text-center">{title}</h2>
+    <div className="flex flex-col items-center py-4 px-4 max-h-[85vh] overflow-y-auto">
+      <h2 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">{title}</h2>
 
       <div
-        className="relative flex items-center justify-center bg-gray-900 rounded-lg overflow-hidden"
+        className="relative flex items-center justify-center bg-gray-900 rounded-lg overflow-hidden max-w-full"
         onTouchStart={handleTouchStart}
       >
         {loading && (
@@ -88,7 +112,7 @@ export default function PDFCarousel({ pdfUrl, title }) {
         >
           <Page
             pageNumber={currentPage}
-            width={Math.min(window.innerWidth - 40, 800)}
+            width={pageWidth || calculatePDFSize()}
             renderTextLayer={false}
             renderAnnotationLayer={false}
             className="mx-auto"
@@ -119,7 +143,7 @@ export default function PDFCarousel({ pdfUrl, title }) {
 
       {/* Page Indicator */}
       {!error && numPages && (
-        <div className="mt-6 flex items-center gap-4">
+        <div className="mt-4 flex items-center gap-4 flex-wrap justify-center">
           <div className="text-text-muted">
             Page {currentPage} of {numPages}
           </div>
