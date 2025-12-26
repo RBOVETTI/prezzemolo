@@ -32,6 +32,20 @@
            "file": "/articles/A(I)GENT4FINANCE-CAROSELLO.pdf"
         }
       ]
+    },
+    {
+      "id": 3,
+      "title": "L’illusione dell’“AI agentica”: concetti base, limiti e rischi resi evidenti dal confronto con la teoria dell’agenzia",
+      "description": "Nel corso dell’ultimo anni si è diffuso un entusiasmo (interesse?) crescente attorno al concetto di “AI agentica”, ovvero sistemi di intelligenza artificiale capaci di agire con una qualche forma di autonomia perseguendo obiettivi più che eseguendo un processo avente questo fine.  Ma a fronte di questo interesse, mi sorge spontanea una domanda provocatoria: quanti di quelli che usano questo termine hanno riflettuto, davvero, su cosa significa “agente”, su quali origini abbia il termine e quali trappole si nascondano dietro il suo utilizzo disinvolto? ",
+      "topic": "AI",
+      "language": "en",
+      "options": [
+        {
+          "type": "download",
+          "label": "Download PDF",
+          "file": "/articles/A(I)GENTS.pdf"
+        }
+      ]
     }
   ]
 }
