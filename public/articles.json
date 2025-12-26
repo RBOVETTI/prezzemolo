@@ -25,6 +25,11 @@
           "type": "download",
           "label": "Download PDF",
           "file": "/articles/A(I)GENT4FINANCE-ITA.pdf"
+        },
+        {
+           "type": "carousel",
+           "label": "Sfoglia il carosello",
+           "file": "/articles/A(I)GENT4FINANCE-CAROSELLO"
         }
       ]
     }
