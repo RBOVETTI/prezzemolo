@@ -10,15 +10,18 @@ export default function PDFCarousel({ pdfUrl, title }) {
   const [numPages, setNumPages] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
     setLoading(false);
+    setError(null);
   }
 
   function onDocumentLoadError(error) {
     console.error('Error loading PDF:', error);
     setLoading(false);
+    setError('Impossibile caricare il PDF. Verifica che il file esista e sia accessibile.');
   }
 
   const goToNextPage = () => {
@@ -64,7 +67,16 @@ export default function PDFCarousel({ pdfUrl, title }) {
           </div>
         )}
 
-        <Document
+        {error && (
+          <div className="flex items-center justify-center p-20 bg-dark-light rounded-lg">
+            <div className="text-center">
+              <div className="text-red-400 text-lg mb-2">⚠️ Errore</div>
+              <div className="text-text-muted">{error}</div>
+            </div>
+          </div>
+        )}
+
+        {!error && <Document
           file={pdfUrl}
           onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={onDocumentLoadError}
@@ -81,10 +93,10 @@ export default function PDFCarousel({ pdfUrl, title }) {
             renderAnnotationLayer={false}
             className="mx-auto"
           />
-        </Document>
+        </Document>}
 
         {/* Navigation Arrows */}
-        {currentPage > 1 && (
+        {!error && currentPage > 1 && (
           <button
             onClick={goToPrevPage}
             className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary-dark text-dark w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold transition-all shadow-lg"
@@ -94,7 +106,7 @@ export default function PDFCarousel({ pdfUrl, title }) {
           </button>
         )}
 
-        {currentPage < numPages && (
+        {!error && currentPage < numPages && (
           <button
             onClick={goToNextPage}
             className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary-dark text-dark w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold transition-all shadow-lg"
@@ -106,7 +118,7 @@ export default function PDFCarousel({ pdfUrl, title }) {
       </div>
 
       {/* Page Indicator */}
-      {numPages && (
+      {!error && numPages && (
         <div className="mt-6 flex items-center gap-4">
           <div className="text-text-muted">
             Page {currentPage} of {numPages}
