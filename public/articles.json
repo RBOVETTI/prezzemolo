@@ -13,6 +13,20 @@
           "file": "/articles/A(I)GENT4FINANCE.pdf"
         }
       ]
+    },
+    {
+      "id": 2,
+      "title": "A(I)gents per la funzione Finance: Sci-Fi, realtà e la filosofia della delega dell'Intelligenza",
+      "description": "Gli AI agent non trasformeranno la Finanza perché saranno più intelligenti, ma perché saranno governabili. Ho provato a smontare l'hype attorno agli agenti autonomi, riformulandoli come attori delegati inseriti in processi, ruoli e strutture di accountability. Senza integrazione e stewardship, gli agent non sono innovazione: sono un rischio organizzativo.",
+      "topic": "AI",
+      "language": "it",
+      "options": [
+        {
+          "type": "download",
+          "label": "Download PDF",
+          "file": "/articles/A(I)GENT4FINANCE-ITA.pdf"
+        }
+      ]
     }
   ]
 }
