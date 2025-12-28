@@ -48,7 +48,26 @@
         {
           "type": "carousel",
           "label": "Sfoglia il carosello",
-          "file": "/articles/A(I)GENTS-CAROSELLO.pdf"}
+          "file": "/articles/A(I)GENTS-CAROSELLO.pdf"
+        }
+      ],
+      {
+      "id": 4,
+      "title": "Venere e Marte scoprono di essere nella stessa Galassia. Come il dialogo tra Finance e Technology sta ridefinendo il concetto di Valore",
+      "description": "Colmare il presunto (e spesso assolutorio) divario culturale, che oramai da anni si sintetizza nella metafora ”il CFO proviene da Venere, mentre il CTO da Marte”, è possibile e necessario perchè oggi più che mai abbiamo bisogno di orientare l’innovazione e la performance delle aziende tecnologicamente trasformate verso la creazione di valore sostenibile e inclusivo: non solo profitti, ma impatto positivo su dipendenti, clienti e comunità.",
+      "topic": "IT ORG",
+      "language": "it",
+      "options": [
+        {
+          "type": "download",
+          "label": "Download PDF",
+          "file": "/articles/CFOCTO.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia il carosello",
+          "file": "/articles/CFOCTO-CAROSELLO.pdf"
+        }
       ]
     }
   ]
