@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "googleapis": "^169.0.0",
+    "nodemailer": "^7.0.12",
     "pdfjs-dist": "^5.4.449",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-pdf": "^10.2.0",
+    "react-router-dom": "^7.11.0",
     "swiper": "^12.0.3"
   },
   "devDependencies": {

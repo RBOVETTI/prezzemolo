@@ -1,0 +1,73 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Articolo Pubblico - Download Libero",
+      "description": "Questo articolo è pubblico e può essere scaricato liberamente senza compilare alcun form.",
+      "topic": "AI",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download PDF",
+          "file": "/articles/articolo-pubblico.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia il carosello",
+          "file": "/articles/articolo-pubblico-carosello.pdf"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Articolo Protetto - Lead Generation",
+      "description": "Questo articolo è protetto e richiede la compilazione di un form per accedere al download.",
+      "topic": "Finance",
+      "language": "en",
+      "protected": true,
+      "valueProposition": "Scopri le strategie avanzate per ottimizzare il tuo business",
+      "coverImage": "/covers/articolo-protetto.jpg",
+      "benefits": [
+        "Framework completo per la gestione finanziaria",
+        "Casi studio reali con risultati misurabili",
+        "Template pronti all'uso da applicare subito",
+        "Checklist operative per l'implementazione",
+        "Accesso a risorse bonus esclusive"
+      ],
+      "options": [
+        {
+          "type": "protected-download",
+          "label": "Scarica il documento",
+          "file": "/articles/articolo-protetto.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Anteprima carosello",
+          "file": "/articles/articolo-protetto-carosello.pdf"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Articolo Misto - Download e Carosello Pubblico",
+      "description": "Questo articolo ha sia download libero che carosello pubblico.",
+      "topic": "Technology",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download PDF",
+          "file": "/articles/articolo-misto.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia",
+          "file": "/articles/articolo-misto-carosello.pdf"
+        }
+      ]
+    }
+  ]
+}
