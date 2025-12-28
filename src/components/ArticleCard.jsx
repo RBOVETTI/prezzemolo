@@ -1,4 +1,4 @@
-export default function ArticleCard({ article, onOpenCarousel }) {
+export default function ArticleCard({ article, onOpenCarousel, onOpenLeadGen }) {
   const languageLabel = article.language === 'it' ? 'Italiano' : 'English';
 
   const handleOptionClick = (option) => {
@@ -8,6 +8,9 @@ export default function ArticleCard({ article, onOpenCarousel }) {
     } else if (option.type === 'carousel') {
       // Open carousel in modal
       onOpenCarousel({ title: article.title, file: option.file });
+    } else if (option.type === 'protected-download') {
+      // Open lead generation modal
+      onOpenLeadGen(article);
     }
   };
 
@@ -16,13 +19,18 @@ export default function ArticleCard({ article, onOpenCarousel }) {
       <div className="mb-4">
         <h2 className="text-xl font-semibold text-white mb-3">{article.title}</h2>
 
-        <div className="flex gap-3 mb-4">
+        <div className="flex gap-3 mb-4 flex-wrap">
           <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-primary/15 text-primary border border-primary">
             {article.topic}
           </span>
           <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-white/10 text-white border border-text-muted">
             {languageLabel}
           </span>
+          {article.protected && (
+            <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-red-500/15 text-red-400 border border-red-400">
+              🔒 Protetto
+            </span>
+          )}
         </div>
       </div>
 
@@ -39,10 +47,12 @@ export default function ArticleCard({ article, onOpenCarousel }) {
             className={`px-6 py-3 rounded font-semibold transition-all ${
               option.type === 'carousel'
                 ? 'bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-dark'
+                : option.type === 'protected-download'
+                ? 'bg-red-500 hover:bg-red-600 text-white'
                 : 'bg-primary hover:bg-primary-dark text-dark'
             } hover:-translate-y-0.5 hover:shadow-lg`}
           >
-            {option.label}
+            {option.type === 'protected-download' ? '🔒 ' : ''}{option.label}
           </button>
         ))}
       </div>
