@@ -140,7 +140,7 @@ async function sendEmailToUser({ name, email, articleTitle, pdfUrl }) {
           </div>
           <div class="footer">
             <p>Hai ricevuto questa email perché hai richiesto il download di un documento.</p>
-            <p><a href="${process.env.NEXT_PUBLIC_SITE_URL}/privacy-policy">Privacy Policy</a> | <a href="${process.env.NEXT_PUBLIC_SITE_URL}/api/unsubscribe?email=${encodeURIComponent(email)}">Cancella i miei dati</a></p>
+            <p><a href="${process.env.NEXT_PUBLIC_SITE_URL.trim()}/privacy-policy">Privacy Policy</a> | <a href="${process.env.NEXT_PUBLIC_SITE_URL.trim()}/api/unsubscribe?email=${encodeURIComponent(email)}">Cancella i miei dati</a></p>
           </div>
         </div>
       </body>
