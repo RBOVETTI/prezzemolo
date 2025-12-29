@@ -74,35 +74,6 @@
           "file": "/articles/CFOCTO-CAROSELLO.pdf"
         }
       ]
-    },
-    {
-      "id": 5,
-      "title": "TEST",
-      "description": "TEST",
-      "topic": "TEST",
-      "language": "it",
-      "protected": true,
-      "valueProposition": "Scopri le strategie avanzate per ottimizzare il tuo business",
-      "coverImage": "/covers/test.png",
-      "benefits": [
-        "Framework completo per la gestione finanziaria",
-        "Casi studio reali con risultati misurabili",
-        "Template pronti all'uso da applicare subito",
-        "Checklist operative per l'implementazione",
-        "Accesso a risorse bonus esclusive"
-      ],
-      "options": [
-        {
-          "type": "protected-download",
-          "label": "Scarica il documento",
-          "file": "/articles/CFOCTO.pdf"
-        },
-        {
-          "type": "carousel",
-          "label": "Anteprima carosello",
-          "file": "/articles/CFOCTO-CAROSELLO.pdf"
-        }
-      ]
     }
   ]
 }
