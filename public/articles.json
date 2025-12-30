@@ -78,7 +78,7 @@
       {
       "id": 5,
       "title": "Dal Niente all'Agente: cronistoria di una evoluzione cognitiva",
-      "description": "",
+      "description": "Un “wrapped” ragionato, e come sempre un po’ disilluso, dell’evoluzione dell’AI fino al 2025. Approfitto del fine anno per archiviare i miei testi di riferimento degli anni passati in attesa di dedicarmi a nuove letture e provo a tirare una riga: doverosamente inizio con una cornice storica (dai sistemi esperti al deep learning, fino all’era Transformer) per poi ricostruire quello che ho visto in prima persona accadere dal 2022 ad oggi passando attraverso l’entusiasmo, lo shock culturale ed il “pilot purgatory”, tra hype, shadow AI, dati sporchi e business case che collassano sotto il peso dell’inferenza, spesso per task che una macro di Excel avrebbe risolto con più dignità. Provo a spiegare perchè per me il 2025 segna il cambio ontologico: dalla “chat” all’“act”, ovvero dall’output sincrono all’agency, con un focus su anatomia dell’agente moderno (core LLM, memoria, tools, planning) e pattern di robustezza accompagnando però l’emergente crisi cognitiva: performance senza apprendimento, illusione di competenza e di ragionamento e, per quanto riguarda l’istruzione superiore, la necessità di un nuovo contratto didattico “from cheat to chat”. L’augurio per il 2026 è buona decomplexity a tutti, nella certezza oramai che vince chi sa governare, non chi compra licenze a caso.",
       "topic": "AI",
       "language": "it",
       "protected": false,
@@ -95,4 +95,5 @@
         }
       ]
     }
+  ]
 }
