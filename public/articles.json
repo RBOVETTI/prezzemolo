@@ -72,8 +72,10 @@
           "type": "carousel",
           "label": "Sfoglia il carosello",
           "file": "/articles/CFOCTO-CAROSELLO.pdf"
-        },
-        {
+        }
+      ]
+      },
+      {
       "id": 5,
       "title": "Dal Niente all'Agente: cronistoria di una evoluzione cognitiva",
       "description": "",
@@ -93,5 +95,4 @@
         }
       ]
     }
-  ]
 }
