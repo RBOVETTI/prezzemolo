@@ -86,12 +86,12 @@
         {
           "type": "download",
           "label": "Download PDF",
-          "file": "/articles/2025wrapped.pdf"
+          "file": "/articles/2025Wrapped.pdf"
         },
         {
           "type": "carousel",
           "label": "Sfoglia il carosello",
-          "file": "/articles/2025wrapped-CAROSELLO.pdf"
+          "file": "/articles/2025Wrapped-CAROSELLO.pdf"
         }
       ]
     }
