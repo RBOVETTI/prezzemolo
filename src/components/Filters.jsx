@@ -10,7 +10,7 @@ export default function Filters({ topics, selectedTopic, selectedLanguage, onTop
             id="topic-filter"
             value={selectedTopic}
             onChange={(e) => onTopicChange(e.target.value)}
-            className="px-3 py-2 border border-dark-lighter rounded bg-dark-light text-white cursor-pointer transition-colors hover:border-primary focus:border-primary focus:outline-none"
+            className="px-3 py-2 border border-dark-lighter rounded bg-dark-light text-gray-900 cursor-pointer transition-colors hover:border-primary focus:border-primary focus:outline-none"
           >
             <option value="all">Tutti</option>
             {topics.map(topic => (
@@ -27,7 +27,7 @@ export default function Filters({ topics, selectedTopic, selectedLanguage, onTop
             id="language-filter"
             value={selectedLanguage}
             onChange={(e) => onLanguageChange(e.target.value)}
-            className="px-3 py-2 border border-dark-lighter rounded bg-dark-light text-white cursor-pointer transition-colors hover:border-primary focus:border-primary focus:outline-none"
+            className="px-3 py-2 border border-dark-lighter rounded bg-dark-light text-gray-900 cursor-pointer transition-colors hover:border-primary focus:border-primary focus:outline-none"
           >
             <option value="all">Tutte</option>
             <option value="it">Italiano</option>

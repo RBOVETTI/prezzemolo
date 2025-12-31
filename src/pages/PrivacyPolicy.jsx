@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">1. Introduzione</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduzione</h2>
             <p>
               La presente Privacy Policy descrive le modalità di trattamento dei dati personali degli utenti
               che visitano il sito web <strong>All you need is thought</strong> e utilizzano i servizi di download
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">2. Titolare del Trattamento</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Titolare del Trattamento</h2>
             <p>
               Il Titolare del trattamento dei dati è il proprietario del sito web, raggiungibile via email
               all'indirizzo indicato sul sito.
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">3. Dati Raccolti e Finalità del Trattamento</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Dati Raccolti e Finalità del Trattamento</h2>
             <h3 className="text-xl font-bold text-primary mb-2">3.1 Dati raccolti tramite form</h3>
             <p>Quando richiedi il download di un documento protetto, raccogliamo:</p>
             <ul className="list-disc ml-6 mt-2 space-y-1">
@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">4. Cookie e Tecnologie di Tracciamento</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Cookie e Tecnologie di Tracciamento</h2>
             <p>
               Questo sito utilizza <strong>esclusivamente cookie tecnici</strong> necessari per il funzionamento
               del sito (es. gestione della sessione, preferenze utente).
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">5. Modalità di Trattamento e Conservazione</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Modalità di Trattamento e Conservazione</h2>
             <p>
               I dati personali vengono trattati con strumenti automatizzati e conservati in modo sicuro
               su server protetti (Google Sheets).
@@ -91,7 +91,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">6. Comunicazione e Diffusione dei Dati</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Comunicazione e Diffusione dei Dati</h2>
             <p>
               I tuoi dati personali non vengono ceduti a terzi per finalità commerciali.
             </p>
@@ -110,7 +110,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">7. Diritti dell'Interessato</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Diritti dell'Interessato</h2>
             <p>
               Ai sensi degli articoli 15-22 del GDPR, hai diritto di:
             </p>
@@ -140,7 +140,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">8. Sicurezza dei Dati</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Sicurezza dei Dati</h2>
             <p>
               Adottiamo misure di sicurezza tecniche e organizzative adeguate per proteggere i dati personali
               da accessi non autorizzati, perdita, distruzione o divulgazione.
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">9. Modifiche alla Privacy Policy</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Modifiche alla Privacy Policy</h2>
             <p>
               Ci riserviamo il diritto di modificare o aggiornare la presente Privacy Policy in qualsiasi momento.
               Le modifiche saranno pubblicate su questa pagina con l'indicazione della data di ultimo aggiornamento.
@@ -168,7 +168,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">10. Reclami</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Reclami</h2>
             <p>
               Se ritieni che il trattamento dei tuoi dati personali violi il GDPR, hai il diritto di proporre
               reclamo al Garante per la Protezione dei Dati Personali:
@@ -183,7 +183,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">11. Contatti</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Contatti</h2>
             <p>
               Per qualsiasi domanda relativa alla presente Privacy Policy o al trattamento dei dati personali,
               puoi contattarci all'indirizzo email indicato sul sito.

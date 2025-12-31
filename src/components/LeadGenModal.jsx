@@ -145,7 +145,7 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
         {/* Benefits */}
         {article.benefits && article.benefits.length > 0 && (
           <div className="mb-8">
-            <h3 className="text-xl font-bold text-white mb-4">Cosa troverai in questo documento:</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Cosa troverai in questo documento:</h3>
             <ul className="space-y-2">
               {article.benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start">
@@ -159,11 +159,11 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
-          <h3 className="text-xl font-bold text-white mb-4">Compila il form per scaricare il documento</h3>
+          <h3 className="text-xl font-bold text-gray-900 mb-4">Compila il form per scaricare il documento</h3>
 
           {/* Nome */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
+            <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-1">
               Nome e Cognome *
             </label>
             <input
@@ -175,7 +175,7 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               placeholder="Mario Rossi"
               className={`w-full px-4 py-3 bg-dark-light border ${
                 errors.name ? 'border-red-500' : 'border-dark-lighter'
-              } rounded text-white placeholder-text-muted focus:border-primary focus:outline-none`}
+              } rounded text-gray-900 placeholder-text-muted focus:border-primary focus:outline-none`}
               required
             />
             {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name}</p>}
@@ -183,7 +183,7 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-1">
               Email *
             </label>
             <input
@@ -195,7 +195,7 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               placeholder="mario.rossi@example.com"
               className={`w-full px-4 py-3 bg-dark-light border ${
                 errors.email ? 'border-red-500' : 'border-dark-lighter'
-              } rounded text-white placeholder-text-muted focus:border-primary focus:outline-none`}
+              } rounded text-gray-900 placeholder-text-muted focus:border-primary focus:outline-none`}
               required
             />
             {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
@@ -203,7 +203,7 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
 
           {/* Azienda */}
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-white mb-1">
+            <label htmlFor="company" className="block text-sm font-medium text-gray-900 mb-1">
               Azienda
             </label>
             <input
@@ -213,13 +213,13 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               value={formData.company}
               onChange={handleChange}
               placeholder="Nome azienda"
-              className="w-full px-4 py-3 bg-dark-light border border-dark-lighter rounded text-white placeholder-text-muted focus:border-primary focus:outline-none"
+              className="w-full px-4 py-3 bg-dark-light border border-dark-lighter rounded text-gray-900 placeholder-text-muted focus:border-primary focus:outline-none"
             />
           </div>
 
           {/* Ruolo */}
           <div>
-            <label htmlFor="role" className="block text-sm font-medium text-white mb-1">
+            <label htmlFor="role" className="block text-sm font-medium text-gray-900 mb-1">
               Ruolo
             </label>
             <input
@@ -229,7 +229,7 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               value={formData.role}
               onChange={handleChange}
               placeholder="Es. CTO, CFO, Manager"
-              className="w-full px-4 py-3 bg-dark-light border border-dark-lighter rounded text-white placeholder-text-muted focus:border-primary focus:outline-none"
+              className="w-full px-4 py-3 bg-dark-light border border-dark-lighter rounded text-gray-900 placeholder-text-muted focus:border-primary focus:outline-none"
             />
           </div>
 
