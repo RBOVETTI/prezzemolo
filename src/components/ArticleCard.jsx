@@ -17,13 +17,13 @@ export default function ArticleCard({ article, onOpenCarousel, onOpenLeadGen }) 
   return (
     <div className="bg-dark-light rounded-lg p-8 shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl flex flex-col">
       <div className="mb-4">
-        <h2 className="text-xl font-semibold text-white mb-3">{article.title}</h2>
+        <h2 className="text-xl font-semibold text-gray-900 mb-3">{article.title}</h2>
 
         <div className="flex gap-3 mb-4 flex-wrap">
           <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-primary/15 text-primary border border-primary">
             {article.topic}
           </span>
-          <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-white/10 text-white border border-text-muted">
+          <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-gray-800/10 text-gray-800 border border-text-muted">
             {languageLabel}
           </span>
           {article.protected && (
