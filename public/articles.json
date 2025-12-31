@@ -4,7 +4,7 @@
       "id": 1,
       "title": "A(I)gents for Finance: Sci-Fi, reality, and the philosophy of delegated Intelligence",
       "description": "AI agents will not transform Finance by being smarter, but by being governable. I tried to dismantles the hype around autonomous agents, reframing them as delegated actors embedded in processes, roles, and accountability structures. Without integration and stewardship, agents are not innovation, they are organizational risk.",
-      "topic": "AI",
+      "topic": "A(I)GENTS",
       "language": "en",
       "protected": false,
       "options": [
@@ -19,7 +19,7 @@
       "id": 2,
       "title": "A(I)gents per la funzione Finance: Sci-Fi, realtà e la filosofia della delega dell'Intelligenza",
       "description": "Gli AI agent non trasformeranno la Finanza perché saranno più intelligenti, ma perché saranno governabili. Ho provato a smontare l'hype attorno agli agenti autonomi, riformulandoli come attori delegati inseriti in processi, ruoli e strutture di accountability. Senza integrazione e stewardship, gli agent non sono innovazione: sono un rischio organizzativo.",
-      "topic": "AI",
+      "topic": "A(I)GENTS",
       "language": "it",
       "protected": false,
       "options": [
@@ -39,7 +39,7 @@
       "id": 3,
       "title": "L’illusione dell’“AI agentica”: concetti base, limiti e rischi resi evidenti dal confronto con la teoria dell’agenzia",
       "description": "Nel corso dell’ultimo anno si è diffuso un entusiasmo (interesse?) crescente attorno al concetto di “AI agentica”, ovvero sistemi di intelligenza artificiale capaci di agire con una qualche forma di autonomia perseguendo obiettivi più che eseguendo un processo avente questo fine.  Ma a fronte di questo interesse, mi sorge spontanea una domanda provocatoria: quanti di quelli che usano questo termine hanno riflettuto, davvero, su cosa significa “agente”, su quali origini abbia il termine e quali trappole si nascondano dietro il suo utilizzo disinvolto? ",
-      "topic": "AI",
+      "topic": "A(I)GENTS",
       "language": "it",
       "protected": false,
       "options": [
@@ -79,7 +79,7 @@
       "id": 5,
       "title": "Dal Niente all'Agente: cronistoria di una evoluzione cognitiva",
       "description": "Un “wrapped” ragionato, e come sempre un po’ disilluso, dell’evoluzione dell’AI fino al 2025. Approfitto del fine anno per archiviare i miei testi di riferimento degli anni passati in attesa di dedicarmi a nuove letture e provo a tirare una riga: doverosamente inizio con una cornice storica (dai sistemi esperti al deep learning, fino all’era Transformer) per poi ricostruire quello che ho visto in prima persona accadere dal 2022 ad oggi passando attraverso l’entusiasmo, lo shock culturale ed il “pilot purgatory”, tra hype, shadow AI, dati sporchi e business case che collassano sotto il peso dell’inferenza, spesso per task che una macro di Excel avrebbe risolto con più dignità. Provo a spiegare perchè per me il 2025 segna il cambio ontologico: dalla “chat” all’“act”, ovvero dall’output sincrono all’agency, con un focus su anatomia dell’agente moderno (core LLM, memoria, tools, planning) e pattern di robustezza accompagnando però l’emergente crisi cognitiva: performance senza apprendimento, illusione di competenza e di ragionamento e, per quanto riguarda l’istruzione superiore, la necessità di un nuovo contratto didattico “from cheat to chat”. L’augurio per il 2026 è buona decomplexity a tutti, nella certezza oramai che vince chi sa governare, non chi compra licenze a caso.",
-      "topic": "AI",
+      "topic": "A(I)GENTS",
       "language": "it",
       "protected": false,
       "options": [
