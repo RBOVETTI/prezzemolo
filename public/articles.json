@@ -97,6 +97,25 @@
     },
     {
       "id": 6,
+      "title": "ConcrEthica: spunti di filosofia pragmatica per governare il presente digitale",
+      "description": "Navigare nelle acque turbolente della trasformazione digitale richiede lo sviluppo, e talvolta la riscoperta e l’affinamento, di strumenti culturali come l’etica e la filosofia, che non associamo immediatamente al dominio delle tecnologie. Tuttavia, la bussola etica necessaria per trovare la rotta verso uno sviluppo umano, in un contesto di accelerazione digitale che sembra relegare l’uomo ai margini, è sia una necessità sia un’opzione. Purtroppo, questa bussola deve ancora essere progettata, e ci troviamo già oggi a navigare in questi flutti.",
+  "topic": "FILOSOF(I)A",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download PDF",
+          "file": "/articles/CONCRETHICA.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia il carosello",
+          "file": "/articles/CONCRETHICA-CAROSELLO.pdf"
+        }
+      }, 
+    {
+      "id": 7,
       "title": "Distant Reading potenziato da LLM: Meta-Analisi comparative, riflessioni concettuali ed epistemologiche ed elementi pratici ed applicativi",
       "description": "Ho provato a dare una forma ad una disordinata collezione di appunti raccolti come risposta ad una suggestione sulla tematica del “Distant Writing”  e dai riferimenti (indiretti) in esso contenuti circa le metodologie di “Distant Reading. Questa porta aperta su concettualizzazioni importanti di processi metodologici che possono sembrare “intuitivi” mi ha fatto intravedere altri spiragli di luce che filtravano da altre porte concettuali precedentemente solo schiuse interrogandomi sul fatto che queste potessero in qualche modo essere connesse. Queste porte “schiuse” sono la metodologia della Systematic Review  ed il deep learning applicato alle fonti dati di “natura testuale” che di fatto è la meccanica di addestramento degli LLM che negli ultimi due anni hanno adicalmente trasformato la nostra esperienza digitale. Mi sono quindi baloccato nell’indagare possibili similitudini nonché certe e sostanziali differenze ed a costruire un framework teorico pratico nel quale poter “sperimentare” consapevolmente qualche esercizio di “distant reading 4.0”. L’assoluta mancanza di originalità nelle mie conclusioni mi rassicura circa la relativa bontà delle medesime e mi riposiziona nello spazio che io stesso preferisco considerare il mio, ovverosia quello di meta-divulgatore entusiasta.",
       "topic": "GENAI",
