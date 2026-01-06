@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles JSON Editor</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f7;
+      padding: 20px;
+      color: #1d1d1f;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 {
+      color: #d4af37;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .header {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: #d4af37;
+      color: #1d1d1f;
+    }
+    .btn-primary:hover { background: #b8941f; }
+    .btn-secondary {
+      background: #e5e5ea;
+      color: #1d1d1f;
+    }
+    .btn-secondary:hover { background: #d0d0d8; }
+    .btn-danger {
+      background: #ff3b30;
+      color: white;
+    }
+    .btn-danger:hover { background: #cc2f26; }
+    .btn-success {
+      background: #34c759;
+      color: white;
+    }
+    .btn-success:hover { background: #28a745; }
+    .articles-list {
+      display: grid;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .article-item {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .article-info h3 {
+      color: #1d1d1f;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #6e6e73;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      margin-right: 5px;
+      font-weight: 600;
+    }
+    .badge-topic { background: #d4af37; color: #1d1d1f; }
+    .badge-lang { background: #e5e5ea; color: #1d1d1f; }
+    .badge-protected { background: #ff3b30; color: white; }
+    .article-actions { display: flex; gap: 10px; }
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal.active { display: flex; }
+    .modal-content {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 700px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .modal-header h2 {
+      color: #d4af37;
+      font-size: 24px;
+    }
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #6e6e73;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #1d1d1f;
+      font-size: 14px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d0d0d8;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+    .form-group textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .checkbox-group input[type="checkbox"] {
+      width: auto;
+      cursor: pointer;
+    }
+    .options-list {
+      border: 1px solid #d0d0d8;
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 10px;
+    }
+    .option-item {
+      background: #f5f5f7;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .option-item:last-child { margin-bottom: 0; }
+    .remove-option {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff3b30;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 1;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #6e6e73;
+    }
+    .empty-state h3 {
+      margin-bottom: 10px;
+      color: #1d1d1f;
+    }
+    input[type="file"] {
+      padding: 8px;
+      cursor: pointer;
+    }
+    .actions-bar {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .success-msg {
+      background: #d1f4e0;
+      color: #0f5132;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: none;
+    }
+    .success-msg.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Articles JSON Editor</h1>
+
+    <div class="header">
+      <div class="actions-bar">
+        <input type="file" id="loadFile" accept=".json" style="display:none">
+        <button class="btn btn-secondary" onclick="document.getElementById('loadFile').click()">
+          📂 Carica articles.json
+        </button>
+        <button class="btn btn-primary" onclick="addArticle()">
+          ➕ Nuovo Articolo
+        </button>
+        <button class="btn btn-success" onclick="downloadJSON()">
+          💾 Scarica JSON
+        </button>
+      </div>
+    </div>
+
+    <div class="success-msg" id="successMsg"></div>
+
+    <div id="articlesList" class="articles-list">
+      <div class="empty-state">
+        <h3>Nessun articolo caricato</h3>
+        <p>Carica un file articles.json oppure crea un nuovo articolo</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Nuovo Articolo</h2>
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+      </div>
+
+      <form id="articleForm" onsubmit="saveArticle(event)">
+        <input type="hidden" id="editIndex" value="">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>ID *</label>
+            <input type="number" id="articleId" required min="1">
+          </div>
+          <div class="form-group">
+            <label>Lingua *</label>
+            <select id="articleLanguage" required>
+              <option value="it">Italiano</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Titolo *</label>
+          <input type="text" id="articleTitle" required>
+        </div>
+
+        <div class="form-group">
+          <label>Descrizione *</label>
+          <textarea id="articleDescription" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Topic *</label>
+            <input type="text" id="articleTopic" required placeholder="es. A(I)GENTS, GENAI, IT ORG">
+          </div>
+          <div class="form-group">
+            <label>Immagine (path)</label>
+            <input type="text" id="articleImage" placeholder="/images/articles/example.jpg">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="articleProtected">
+            <label for="articleProtected" style="margin:0">Articolo protetto (richiede lead generation)</label>
+          </div>
+        </div>
+
+        <div class="form-group" id="protectedFields" style="display:none">
+          <label>Value Proposition (per articoli protetti)</label>
+          <textarea id="articleValueProp" placeholder="Testo breve che spiega il valore del documento"></textarea>
+
+          <label style="margin-top:10px">Cover Image (per articoli protetti)</label>
+          <input type="text" id="articleCoverImage" placeholder="/covers/example.jpg">
+
+          <label style="margin-top:10px">Benefits (uno per riga, per articoli protetti)</label>
+          <textarea id="articleBenefits" placeholder="Beneficio 1&#10;Beneficio 2&#10;Beneficio 3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Opzioni (download, carousel, protected-download)</label>
+          <div class="options-list" id="optionsList"></div>
+          <button type="button" class="btn btn-secondary" onclick="addOption()" style="margin-top:10px; width:100%">
+            ➕ Aggiungi Opzione
+          </button>
+        </div>
+
+        <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:20px">
+          <button type="button" class="btn btn-secondary" onclick="closeModal()">Annulla</button>
+          <button type="submit" class="btn btn-primary">💾 Salva</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let articles = { articles: [] };
+    let editingIndex = -1;
+
+    // Load file
+    document.getElementById('loadFile').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          articles = JSON.parse(e.target.result);
+          if (!articles.articles || !Array.isArray(articles.articles)) {
+            throw new Error('Invalid JSON structure');
+          }
+          renderArticles();
+          showSuccess('File caricato con successo!');
+        } catch (error) {
+          alert('Errore nel caricamento del file: ' + error.message);
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    // Render articles list
+    function renderArticles() {
+      const container = document.getElementById('articlesList');
+
+      if (articles.articles.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <h3>Nessun articolo</h3>
+            <p>Aggiungi un nuovo articolo per iniziare</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = articles.articles.map((article, index) => `
+        <div class="article-item">
+          <div class="article-info">
+            <h3>${article.title}</h3>
+            <div class="article-meta">
+              <span class="badge badge-topic">${article.topic}</span>
+              <span class="badge badge-lang">${article.language === 'it' ? '🇮🇹 IT' : '🇬🇧 EN'}</span>
+              ${article.protected ? '<span class="badge badge-protected">🔒 Protetto</span>' : ''}
+              <span style="margin-left:10px">ID: ${article.id} • ${article.options?.length || 0} opzioni</span>
+            </div>
+          </div>
+          <div class="article-actions">
+            <button class="btn btn-secondary" onclick="editArticle(${index})">✏️ Modifica</button>
+            <button class="btn btn-danger" onclick="deleteArticle(${index})">🗑️ Elimina</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Show success message
+    function showSuccess(message) {
+      const msg = document.getElementById('successMsg');
+      msg.textContent = message;
+      msg.classList.add('show');
+      setTimeout(() => msg.classList.remove('show'), 3000);
+    }
+
+    // Add new article
+    function addArticle() {
+      editingIndex = -1;
+      document.getElementById('modalTitle').textContent = 'Nuovo Articolo';
+      document.getElementById('articleForm').reset();
+      document.getElementById('editIndex').value = '';
+      document.getElementById('optionsList').innerHTML = '';
+      document.getElementById('protectedFields').style.display = 'none';
+
+      // Set next available ID
+      const maxId = articles.articles.reduce((max, a) => Math.max(max, a.id || 0), 0);
+      document.getElementById('articleId').value = maxId + 1;
+
+      openModal();
+    }
+
+    // Edit article
+    function editArticle(index) {
+      editingIndex = index;
+      const article = articles.articles[index];
+
+      document.getElementById('modalTitle').textContent = 'Modifica Articolo';
+      document.getElementById('editIndex').value = index;
+      document.getElementById('articleId').value = article.id;
+      document.getElementById('articleTitle').value = article.title;
+      document.getElementById('articleDescription').value = article.description;
+      document.getElementById('articleTopic').value = article.topic;
+      document.getElementById('articleLanguage').value = article.language;
+      document.getElementById('articleImage').value = article.image || '';
+      document.getElementById('articleProtected').checked = article.protected || false;
+      document.getElementById('articleValueProp').value = article.valueProposition || '';
+      document.getElementById('articleCoverImage').value = article.coverImage || '';
+      document.getElementById('articleBenefits').value = article.benefits ? article.benefits.join('\n') : '';
+
+      toggleProtectedFields();
+
+      // Render options
+      const optionsList = document.getElementById('optionsList');
+      optionsList.innerHTML = '';
+      if (article.options) {
+        article.options.forEach((opt, i) => {
+          addOption(opt);
+        });
+      }
+
+      openModal();
+    }
+
+    // Delete article
+    function deleteArticle(index) {
+      if (confirm('Sei sicuro di voler eliminare questo articolo?')) {
+        articles.articles.splice(index, 1);
+        renderArticles();
+        showSuccess('Articolo eliminato!');
+      }
+    }
+
+    // Add option
+    function addOption(optionData = null) {
+      const optionsList = document.getElementById('optionsList');
+      const optionIndex = optionsList.children.length;
+
+      const optionDiv = document.createElement('div');
+      optionDiv.className = 'option-item';
+      optionDiv.innerHTML = `
+        <button type="button" class="remove-option" onclick="removeOption(this)">×</button>
+        <div class="form-group" style="margin-bottom:10px">
+          <label style="font-size:12px">Tipo *</label>
+          <select class="option-type" required>
+            <option value="download" ${optionData?.type === 'download' ? 'selected' : ''}>Download</option>
+            <option value="carousel" ${optionData?.type === 'carousel' ? 'selected' : ''}>Carousel</option>
+            <option value="protected-download" ${optionData?.type === 'protected-download' ? 'selected' : ''}>Protected Download</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:10px">
+          <label style="font-size:12px">Label *</label>
+          <input type="text" class="option-label" value="${optionData?.label || ''}" required>
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label style="font-size:12px">File (path) *</label>
+          <input type="text" class="option-file" value="${optionData?.file || ''}" placeholder="/articles/example.pdf" required>
+        </div>
+      `;
+
+      optionsList.appendChild(optionDiv);
+    }
+
+    // Remove option
+    function removeOption(btn) {
+      btn.parentElement.remove();
+    }
+
+    // Toggle protected fields
+    document.getElementById('articleProtected').addEventListener('change', toggleProtectedFields);
+
+    function toggleProtectedFields() {
+      const isProtected = document.getElementById('articleProtected').checked;
+      document.getElementById('protectedFields').style.display = isProtected ? 'block' : 'none';
+    }
+
+    // Save article
+    function saveArticle(event) {
+      event.preventDefault();
+
+      // Get options
+      const optionItems = document.querySelectorAll('.option-item');
+      const options = Array.from(optionItems).map(item => ({
+        type: item.querySelector('.option-type').value,
+        label: item.querySelector('.option-label').value,
+        file: item.querySelector('.option-file').value
+      }));
+
+      // Build article object
+      const article = {
+        id: parseInt(document.getElementById('articleId').value),
+        title: document.getElementById('articleTitle').value,
+        description: document.getElementById('articleDescription').value,
+        topic: document.getElementById('articleTopic').value,
+        language: document.getElementById('articleLanguage').value,
+        protected: document.getElementById('articleProtected').checked,
+        options: options
+      };
+
+      // Add optional image
+      const image = document.getElementById('articleImage').value.trim();
+      if (image) article.image = image;
+
+      // Add protected fields if needed
+      if (article.protected) {
+        const valueProp = document.getElementById('articleValueProp').value.trim();
+        if (valueProp) article.valueProposition = valueProp;
+
+        const coverImage = document.getElementById('articleCoverImage').value.trim();
+        if (coverImage) article.coverImage = coverImage;
+
+        const benefits = document.getElementById('articleBenefits').value.trim();
+        if (benefits) {
+          article.benefits = benefits.split('\n').map(b => b.trim()).filter(b => b);
+        }
+      }
+
+      // Save or update
+      if (editingIndex >= 0) {
+        articles.articles[editingIndex] = article;
+        showSuccess('Articolo modificato!');
+      } else {
+        articles.articles.push(article);
+        showSuccess('Articolo aggiunto!');
+      }
+
+      // Sort by ID
+      articles.articles.sort((a, b) => a.id - b.id);
+
+      renderArticles();
+      closeModal();
+    }
+
+    // Download JSON
+    function downloadJSON() {
+      if (articles.articles.length === 0) {
+        alert('Nessun articolo da salvare!');
+        return;
+      }
+
+      const jsonStr = JSON.stringify(articles, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'articles.json';
+      a.click();
+      URL.revokeObjectURL(url);
+
+      showSuccess('File scaricato!');
+    }
+
+    // Modal controls
+    function openModal() {
+      document.getElementById('modal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
