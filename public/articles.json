@@ -107,11 +107,6 @@
           "type": "download",
           "label": "Download PDF",
           "file": "/articles/CONCRETHICA.pdf"
-        },
-        {
-          "type": "carousel",
-          "label": "Sfoglia il carosello",
-          "file": "/articles/CONCRETHICA-CAROSELLO.pdf"
         }
       ]
     },
@@ -132,6 +127,21 @@
           "type": "carousel",
           "label": "Sfoglia il carosello",
           "file": "/articles/DISTANTREADING-CAROSELLO.pdf"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "AI & Arte: quando l'intelligenza artificiale incontra la creatività",
+      "description": "Esplorazione del rapporto tra intelligenza artificiale e arte, analizzando come le tecnologie generative stiano ridefinendo i confini della creatività umana e artistica.",
+      "topic": "GENAI",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download PDF",
+          "file": "/articles/AI&ARTE.pdf"
         }
       ]
     }
