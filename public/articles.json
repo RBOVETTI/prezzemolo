@@ -29,9 +29,9 @@
           "file": "/articles/A(I)GENT4FINANCE-ITA.pdf"
         },
         {
-           "type": "carousel",
-           "label": "Sfoglia il carosello",
-           "file": "/articles/A(I)GENT4FINANCE-CAROSELLO.pdf"
+          "type": "carousel",
+          "label": "Sfoglia il carosello",
+          "file": "/articles/A(I)GENT4FINANCE-CAROSELLO.pdf"
         }
       ]
     },
@@ -99,7 +99,7 @@
       "id": 6,
       "title": "ConcrEthica: spunti di filosofia pragmatica per governare il presente digitale",
       "description": "Navigare nelle acque turbolente della trasformazione digitale richiede lo sviluppo, e talvolta la riscoperta e l’affinamento, di strumenti culturali come l’etica e la filosofia, che non associamo immediatamente al dominio delle tecnologie. Tuttavia, la bussola etica necessaria per trovare la rotta verso uno sviluppo umano, in un contesto di accelerazione digitale che sembra relegare l’uomo ai margini, è sia una necessità sia un’opzione. Purtroppo, questa bussola deve ancora essere progettata, e ci troviamo già oggi a navigare in questi flutti.",
-  "topic": "FILOSOF(I)A",
+      "topic": "FILOSOF(I)A",
       "language": "it",
       "protected": false,
       "options": [
@@ -132,8 +132,8 @@
     },
     {
       "id": 8,
-      "title": "AI & Arte: quando l'intelligenza artificiale incontra la creatività",
-      "description": "Esplorazione del rapporto tra intelligenza artificiale e arte, analizzando come le tecnologie generative stiano ridefinendo i confini della creatività umana e artistica.",
+      "title": "La GenAi come archetipo di scomposizione, ricomposizione e generazione ",
+      "description": "Attraverso un’analisi comparativa sistematica, (che ho voluto focalizzare sulla musica concreta di Pierre Schaeffer come paradigma teorico privilegiato perché in questi ultime settimane mi sono trovato, anche in questo caso in modo compulsivo, ad immergermi in quei suoni) ho provato a capire se le strategie di segmentazione, decontestualizzazione, attenzione selettiva e riassemblaggio precedano storicamente e anticipino concettualmente le logiche computazionali della Generative\nAI contemporanea e le possano avere in qualche modo, anche solo implicito, condizionate.\nPer quanto osservandola dal di fuori la GenAI appaia come una discontinuità radicale rispetto a tutto quello che abbiamo conosciuto ed usato sino ad oggi, sono convinto che la formalizzazione computazionale di intuizioni creative fondamentali che attraversano discipline e epoche, possano\naprire prospettive inedite per una sorta teoria unificata della creatività generativa.\nSotto il cofano delle GenAI con le quali oramai abbiamo ridefinito i confini della nostra quotidiana interrelazione digitale, ronza un motore basato su cosiddetto \"meccanismo di attenzione\" che utilizza Query, Key e Value per creare rappresentazioni contestuali dinamiche, processando simultaneamente tutti i token o lessemi di una sequenza (i.e. frase, periodo). I principi fondamentali che governano il funzionamento di questi meccanismi, segmentazione di materiali preesistenti, ricontestualizzazione, assemblaggio guidato da dinamiche di attenzione selettiva, e emergenza di nuovi significati, non sono esclusivi del dominio computazionale contemporaneo.\nAl contrario, seppure in forme diverse, si trovano in diverse pratiche creative e scientifiche\nconsolidate, suggerendo l’esistenza di pattern universali di ricomposizione e generazione.",
       "topic": "GENAI",
       "language": "it",
       "protected": false,
