@@ -107,8 +107,14 @@
           "type": "download",
           "label": "Download PDF",
           "file": "/articles/CONCRETHICA.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia il carosello",
+          "file": "/article/concrethica-carosello.pdf"
         }
-      ]
+      ],
+      "image": "/images/articles/concrethica.png"
     },
     {
       "id": 7,
@@ -142,6 +148,11 @@
           "type": "download",
           "label": "Download PDF",
           "file": "/articles/AI&ARTE.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia il carosello",
+          "file": "/articles/ai&arte-carosello.pdf"
         }
       ]
     }
