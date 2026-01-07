@@ -111,10 +111,10 @@
         {
           "type": "carousel",
           "label": "Sfoglia il carosello",
-          "file": "/article/concrethica-carosello.pdf"
+          "file": "/articles/CONCRETHICA-CAROSELLO.pdf"
         }
       ],
-      "image": "/images/articles/concrethica.png"
+      "image": "/images/articles/CONCRETHICA.png"
     },
     {
       "id": 7,
@@ -152,7 +152,7 @@
         {
           "type": "carousel",
           "label": "Sfoglia il carosello",
-          "file": "/articles/ai&arte-carosello.pdf"
+          "file": "/articles/AI&ARTE-CAROSELLO.pdf"
         }
       ]
     }
