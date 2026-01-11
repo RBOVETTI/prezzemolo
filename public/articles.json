@@ -169,7 +169,7 @@
           "file": "/articles/COGNITIVITA.pdf"
         },
         {
-          "type": "download",
+          "type": "carousel",
           "label": "Sfoglia il carosello",
           "file": "/articles/COGNITIVITA-CAROSELLO.pdf"
         }
