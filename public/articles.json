@@ -166,12 +166,12 @@
         {
           "type": "download",
           "label": "Scarica il PDF",
-          "file": "/articles/COGNITIVITA.PDF"
+          "file": "/articles/COGNITIVITA.pdf"
         },
         {
           "type": "download",
           "label": "Sfoglia il carosello",
-          "file": "/articles/COGNITIVITA-CAROSELLO.Pdf"
+          "file": "/articles/COGNITIVITA-CAROSELLO.pdf"
         }
       ]
     }
