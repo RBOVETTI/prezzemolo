@@ -53,8 +53,13 @@ export default function HomePage() {
       const article = articles.find(a => a.id === parseInt(articleId));
 
       if (article) {
-        // Open lead gen modal for the article
-        handleOpenLeadGen(article);
+        // Check if article has protected-download option
+        const hasProtectedDownload = article.options?.some(opt => opt.type === 'protected-download');
+
+        if (hasProtectedDownload || article.protected) {
+          // Open lead gen modal for protected articles
+          handleOpenLeadGen(article);
+        }
 
         // Clean up URL (remove query parameter)
         window.history.replaceState({}, '', window.location.pathname);
