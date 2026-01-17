@@ -174,6 +174,33 @@
           "file": "/articles/COGNITIVITA-CAROSELLO.pdf"
         }
       ]
+    },
+    {
+      "id": 10,
+      "title": "Verso un framework unitario per l'integrazione dell'AI nell'ecosistema aziendale",
+      "description": "Questo framework nasce dall'ossessione di chi, nel guidare quotidianamente le organizzazioni verso l'adozione dell'AI, ha visto ripetersi lo stesso paradosso: la distanza abissale tra l'eleganza teorica dei modelli esistenti e la loro concreta implementabilità. È il tentativo di rispondere a una domanda che risuona in ogni sala riunioni, in ogni progetto pilota, in ogni discussione strategica: come trasformare la complessità intrinseca dell'ecosistema AI in valore aziendale tangibile e sostenibile?\nIl modello proposto articola l'integrazione permanente dell'Intelligenza Artificiale attraverso una struttura bidimensionale che combina quattro livelli di integrazione (dallo scambio dati bi-direzionale all'integrazione definitoria dell'organizzazione) con quattro domini funzionali interconnessi (Risorse, Dati e Informazioni, Use Case, Strumenti).\nL'architettura distingue due paradigmi fondamentali di interazione uomo-AI: la Co-Intelligence, dove l'AI amplifica le capacità umane mantenendo il controllo decisionale nell'operatore, e la Cybernetic Workforce, dove l'integrazione uomo-macchina raggiunge livelli di sofisticazione tali da rendere indistinguibile il confine tra azione umana e artificiale. Questa dicotomia si materializza attraverso sette tipologie di use case (Personal Assistant Sincroni e Asincroni, Enhanced Use, RPA e Intelligent Automation, Analytics, Augmented Employee) implementabili attraverso strategie tecnologiche Make-Build/Configure-Buy.\nSe le organizzazioni vogliono veramente essere supportate dall'AI, è necessario garantire un accesso democratico alla tecnologia, per questo motivo il framework si completa con la definizione del Portale AI Aziendale, ambiente digitale unificato che garantisce l'accesso alle risorse AI attraverso cinque domini dell'esperienza: Marketplace degli Use Case, Prompt \\& Code Library, Accesso agli Strumenti Approvati, e le aree laterali di Risorse Documentali e Governance.\nLa peculiarità del modello vorrebbe risiedere nella sintesi tra rigore concettuale e pragmatismo operativo, offrendo alle organizzazioni non solo una mappa dell'ecosistema AI ma una guida concreta per navigarne la complessità, trasformando l'adozione dell'Intelligenza Artificiale da sperimentazione episodica a trasformazione sistemica e permanente. Il framework prova a distinguersi dalla letteratura esistente per la sua capacità di superare la frammentazione critica che caratterizza gli attuali approcci accademici e consulenziali. Mentre i framework esistenti tendono a eccellere in domini specialistici - rispettivamente focus su innovation distribuita, sviluppo di capabilities tecniche specifiche, o governance strutturata - pochi offrono l'integrazione sistemica necessaria per affrontare quella che la ricerca più recente definisce una \"crisis of fragmentation\" degli strumenti AI enterprise. La presente proposta colma questo gap fornendo un'architettura bidimensionale che orchestri simultaneamente livelli di integrazione progressivi con domini funzionali interdipendenti, trasformando la complessità dell'adozione AI da ostacolo epistemologico in vantaggio competitivo sistematizzabile.",
+      "topic": "AI",
+      "language": "it",
+      "protected": true,
+      "options": [
+        {
+          "type": "protected-download",
+          "label": "Scarica il documento completo",
+          "file": "/articles/MAPPACONCETTUALE.pfd"
+        },
+        {
+          "type": "carousel",
+          "label": "Scorri il carosello",
+          "file": "/articles/MAPPACONCETTUALE-CAROSELLO.pdf"
+        }
+      ],
+      "valueProposition": "La definizione di un ecosistema AI aziendale rappresenta una sfida epistemologica e pratica di notevole complessità. A differenza delle tecnologie precedenti, caratterizzate da implementazioni relativamente lineari e discrete, l'AI manifesta proprietà sistemiche che trascendono i confini tradizionali tra tecnologia, organizzazione, processi e dati. Questa natura intrinsecamente interconnessa genera quello che potremmo definire un \"effetto eco-sistemico\", dove l'impatto e l'efficacia dell'AI emergono dalla qualità delle relazioni e delle interdipendenze piuttosto che dalle singole componenti tecnologiche. La letteratura esistente, pur riconoscendo questa complessità, ha largamente fallito nel fornire strumenti operativi adeguati. I framework accademici più sofisticati, dimostrano un'eccellente copertura dimensionale dal punto di vista teorico, ma risultano carenti nei meccanismi di adattamento culturale e contestuale necessari per l'implementazione pratica. Parallelamente, le metodologie consulenziali consolidate, pur offrendo guidance operativa dettagliata, tendono a privilegiare approcci che spesso non tengono conto della varietà e specificità dei contesti organizzativi. Questa frammentazione concettuale e operativa assume particolare rilevanza nel contesto delle organizzazioni di medie dimensioni, che rappresentano il tessuto produttivo prevalente in molte economie avanzate ed in particolare di quella Italiana. Tali organizzazioni si trovano in una posizione paradossale: possiedono la flessibilità organizzativa necessaria per implementazioni AI innovative, ma spesso mancano delle risorse e delle competenze specialistiche per navigare la complessità dei framework esistenti. Il risultato è una diffusa sottoutilizzazione del potenziale trasformativo dell'AI, con implementazioni che rimangono confinate a use case isolati piuttosto che evolversi verso ecosistemi integrati.",
+      "coverImage": "/covers/MAPPACONCETTUALE-CAROSELLO.jpg",
+      "benefits": [
+        "Una visione OLISTICA dell'AI (non solo GEN AI) integrata in azienda",
+        "Un framework PRATICO per guidare le decisioni",
+        "Un riferimento quasi \"a checklist\" per accompagnare l'A(I)doption"
+      ]
     }
   ]
 }
