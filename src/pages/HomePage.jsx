@@ -42,6 +42,26 @@ export default function HomePage() {
     setFilteredArticles(filtered);
   }, [selectedTopic, selectedLanguage, articles]);
 
+  // Handle deep linking to protected articles
+  useEffect(() => {
+    if (articles.length === 0) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const articleId = params.get('article');
+
+    if (articleId) {
+      const article = articles.find(a => a.id === parseInt(articleId));
+
+      if (article) {
+        // Open lead gen modal for the article
+        handleOpenLeadGen(article);
+
+        // Clean up URL (remove query parameter)
+        window.history.replaceState({}, '', window.location.pathname);
+      }
+    }
+  }, [articles]);
+
   const handleOpenCarousel = ({ title, file }) => {
     setCarouselModal({ isOpen: true, title, file });
   };
