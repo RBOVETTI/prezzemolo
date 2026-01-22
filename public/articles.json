@@ -159,7 +159,7 @@
       "id": 9,
       "title": "Il paradosso dell’AI Literacy: La conoscenza tecnica ostacola la consapevolezza metacognitiva?",
       "description": "Siamo nel mezzo di una transizione epistemologica (spinta dell’intelligenza artificiale generativa) caratterizzata da una tensione fondamentale tra la rapidità con cui evolviamo nella nostra capacità tecnica di creare e utilizzare sistemi sempre più sofisticati e la lentezza con cui la nostra (pesonale ed organizzativa) comprensione concettuale, epistemologica e metacognitiva si adatta a questa nuova realtà tecnologica.\nStiamo vivendo un momento storico in cui i confini tra cognizione umana e computazione\nartificiale stanno diventando progressivamente sfumati nel senso fenomenologico e linguistico dell’esperienza quotidiana di interazione con questi sistemi, anche se le differenze ontologiche rimangono profonde, e questa sfumatura crea condizioni ideali per confusione che possono avere conseguenze pratiche significative.\nSolo attraverso uno sforzo coordinato e multidisciplinare che affronti esplicitamente questa transizione epistemologica nelle sue dimensioni cognitive, linguistiche, sociali, organizzative e tecnologiche e rifuggendo alle banalizzazioni marketing della “tecnologia a scaffale” sarà possibile trasformare una (empiricamente dimostrata) vulnerabilità in opportnità per lo sviluppo di forme mature, riflessive e criticamente informate di expertise umana nell’era dell’intelligenza artificiale generativa.",
-      "topic": "GENA",
+      "topic": "GENAI",
       "language": "it",
       "protected": false,
       "options": [
@@ -190,7 +190,7 @@
         },
         {
           "type": "carousel",
-          "label": "Scorri il carosello",
+          "label": "Sfoglia il carosello",
           "file": "/articles/MAPPACONCETTUALE-CAROSELLO.pdf"
         }
       ],
