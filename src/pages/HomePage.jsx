@@ -84,10 +84,10 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-bg">
       <Header />
 
-      <main className="container mx-auto px-5 max-w-6xl flex-grow">
+      <main className="container mx-auto px-5 max-w-6xl flex-grow pt-32 md:pt-36">
         <Filters
           topics={topics}
           selectedTopic={selectedTopic}
