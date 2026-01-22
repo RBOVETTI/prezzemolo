@@ -98,7 +98,7 @@ export default function HomePage() {
 
         {filteredArticles.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-text-muted text-lg">
+            <p className="text-text-secondary text-lg">
               Nessun articolo trovato con i filtri selezionati.
             </p>
           </div>

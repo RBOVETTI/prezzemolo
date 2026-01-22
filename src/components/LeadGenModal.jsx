@@ -97,12 +97,12 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
     return (
       <Modal isOpen={isOpen} onClose={onClose}>
         <div className="p-8 text-center">
-          <div className="text-6xl mb-4">✓</div>
-          <h2 className="text-3xl font-bold text-primary mb-4">Grazie!</h2>
-          <p className="text-text-muted mb-4">
+          <div className="text-6xl mb-4 text-accent-warm">✓</div>
+          <h2 className="text-3xl font-serif font-medium text-accent-warm mb-4">Grazie!</h2>
+          <p className="text-text-secondary mb-4">
             Il download del documento dovrebbe partire automaticamente.
           </p>
-          <p className="text-text-muted mb-6">
+          <p className="text-text-secondary mb-6">
             Riceverai anche un'email con il link al documento.
           </p>
           {downloadUrl && (
@@ -110,7 +110,7 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               href={downloadUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-primary text-dark font-bold rounded hover:bg-primary-dark transition-colors"
+              className="inline-block px-6 py-3 bg-accent-warm text-white font-medium rounded hover:bg-accent-warm/90 transition-colors"
             >
               Download manuale
             </a>
@@ -125,9 +125,9 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
       <div className="p-8 max-h-[85vh] overflow-y-auto">
         {/* Hero Section */}
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-primary mb-3">{article.title}</h2>
+          <h2 className="text-3xl font-serif font-medium text-accent-warm mb-3">{article.title}</h2>
           {article.valueProposition && (
-            <p className="text-lg text-text-muted">{article.valueProposition}</p>
+            <p className="text-lg text-text-secondary">{article.valueProposition}</p>
           )}
         </div>
 
@@ -145,12 +145,12 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
         {/* Benefits */}
         {article.benefits && article.benefits.length > 0 && (
           <div className="mb-8">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Cosa troverai in questo documento:</h3>
+            <h3 className="text-xl font-serif font-medium text-text-primary mb-4">Cosa troverai in questo documento:</h3>
             <ul className="space-y-2">
               {article.benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-primary mr-2">✓</span>
-                  <span className="text-text-muted">{benefit}</span>
+                  <span className="text-accent-warm mr-2">✓</span>
+                  <span className="text-text-secondary">{benefit}</span>
                 </li>
               ))}
             </ul>
@@ -159,11 +159,11 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
-          <h3 className="text-xl font-bold text-gray-900 mb-4">Compila il form per scaricare il documento</h3>
+          <h3 className="text-xl font-serif font-medium text-text-primary mb-4">Compila il form per scaricare il documento</h3>
 
           {/* Nome */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-1">
+            <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-1">
               Nome e Cognome *
             </label>
             <input
@@ -173,17 +173,17 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               value={formData.name}
               onChange={handleChange}
               placeholder="Mario Rossi"
-              className={`w-full px-4 py-3 bg-dark-light border ${
-                errors.name ? 'border-red-500' : 'border-dark-lighter'
-              } rounded text-gray-900 placeholder-text-muted focus:border-primary focus:outline-none`}
+              className={`w-full px-4 py-3 bg-white border ${
+                errors.name ? 'border-red-500' : 'border-accent-cold/20'
+              } rounded text-text-primary placeholder-text-secondary/50 focus:border-accent-cold focus:outline-none`}
               required
             />
-            {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name}</p>}
+            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
           </div>
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-1">
               Email *
             </label>
             <input
@@ -193,17 +193,17 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               value={formData.email}
               onChange={handleChange}
               placeholder="mario.rossi@example.com"
-              className={`w-full px-4 py-3 bg-dark-light border ${
-                errors.email ? 'border-red-500' : 'border-dark-lighter'
-              } rounded text-gray-900 placeholder-text-muted focus:border-primary focus:outline-none`}
+              className={`w-full px-4 py-3 bg-white border ${
+                errors.email ? 'border-red-500' : 'border-accent-cold/20'
+              } rounded text-text-primary placeholder-text-secondary/50 focus:border-accent-cold focus:outline-none`}
               required
             />
-            {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
+            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
           </div>
 
           {/* Azienda */}
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-900 mb-1">
+            <label htmlFor="company" className="block text-sm font-medium text-text-primary mb-1">
               Azienda
             </label>
             <input
@@ -213,13 +213,13 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               value={formData.company}
               onChange={handleChange}
               placeholder="Nome azienda"
-              className="w-full px-4 py-3 bg-dark-light border border-dark-lighter rounded text-gray-900 placeholder-text-muted focus:border-primary focus:outline-none"
+              className="w-full px-4 py-3 bg-white border border-accent-cold/20 rounded text-text-primary placeholder-text-secondary/50 focus:border-accent-cold focus:outline-none"
             />
           </div>
 
           {/* Ruolo */}
           <div>
-            <label htmlFor="role" className="block text-sm font-medium text-gray-900 mb-1">
+            <label htmlFor="role" className="block text-sm font-medium text-text-primary mb-1">
               Ruolo
             </label>
             <input
@@ -229,7 +229,7 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               value={formData.role}
               onChange={handleChange}
               placeholder="Es. CTO, CFO, Manager"
-              className="w-full px-4 py-3 bg-dark-light border border-dark-lighter rounded text-gray-900 placeholder-text-muted focus:border-primary focus:outline-none"
+              className="w-full px-4 py-3 bg-white border border-accent-cold/20 rounded text-text-primary placeholder-text-secondary/50 focus:border-accent-cold focus:outline-none"
             />
           </div>
 
@@ -241,34 +241,34 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
                 name="gdprConsent"
                 checked={formData.gdprConsent}
                 onChange={handleChange}
-                className="mt-1 w-4 h-4 accent-primary"
+                className="mt-1 w-4 h-4 accent-accent-warm"
                 required
               />
-              <span className="ml-3 text-sm text-text-muted">
+              <span className="ml-3 text-sm text-text-secondary">
                 Ho letto e accetto la{' '}
                 <a
                   href="/privacy-policy"
                   target="_blank"
-                  className="text-primary hover:underline"
+                  className="text-accent-warm hover:underline"
                 >
                   Privacy Policy
                 </a>{' '}
                 e acconsento al trattamento dei miei dati personali. *
               </span>
             </label>
-            {errors.gdprConsent && <p className="text-red-400 text-sm mt-1">{errors.gdprConsent}</p>}
+            {errors.gdprConsent && <p className="text-red-500 text-sm mt-1">{errors.gdprConsent}</p>}
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full px-6 py-4 bg-primary text-dark font-bold rounded hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg"
+            className="w-full px-6 py-4 bg-accent-warm text-white font-medium rounded hover:bg-accent-warm/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg"
           >
             {isSubmitting ? 'Invio in corso...' : 'Scarica il documento'}
           </button>
 
-          <p className="text-xs text-text-muted text-center">
+          <p className="text-xs text-text-secondary text-center">
             * Campi obbligatori
           </p>
         </form>

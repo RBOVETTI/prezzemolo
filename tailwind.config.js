@@ -7,12 +7,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#d4af37',
-        'primary-dark': '#b8941f',
-        dark: '#d0d0d8',
-        'dark-light': '#e5e5ea',
-        'dark-lighter': '#f0f0f5',
-        'text-muted': '#4a4a54',
+        // Schema grafico allineato a rbovetti.com
+        'bg': '#FAFAF8',
+        'bg-card': '#FFFFFF',
+        'bg-input': '#FFFFFF',
+        'text-primary': '#1A1A1A',
+        'text-secondary': '#4A4A4A',
+        'accent-warm': '#8B2635',
+        'accent-cold': '#1B365D',
+        'border': 'rgba(27, 54, 93, 0.1)',
+        'border-strong': 'rgba(27, 54, 93, 0.2)',
+        // Alias per uso nei componenti
+        primary: '#8B2635',
+        'primary-dark': '#6B1D29',
+      },
+      fontFamily: {
+        'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
+        'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
     },
   },

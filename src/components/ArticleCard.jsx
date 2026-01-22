@@ -15,7 +15,7 @@ export default function ArticleCard({ article, onOpenCarousel, onOpenLeadGen }) 
   };
 
   return (
-    <div className="bg-dark-light rounded-lg overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl flex flex-col">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:-translate-y-1 hover:shadow-xl flex flex-col border border-accent-cold/10">
       {/* Article Image */}
       {article.image && (
         <div className="w-full h-48 overflow-hidden">
@@ -29,24 +29,24 @@ export default function ArticleCard({ article, onOpenCarousel, onOpenLeadGen }) 
 
       <div className="p-8 flex flex-col flex-grow">
         <div className="mb-4">
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">{article.title}</h2>
+          <h2 className="text-xl font-serif font-medium text-text-primary mb-3">{article.title}</h2>
 
         <div className="flex gap-3 mb-4 flex-wrap">
-          <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-primary/15 text-primary border border-primary">
+          <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-accent-warm/10 text-accent-warm border border-accent-warm">
             {article.topic}
           </span>
-          <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-gray-800/10 text-gray-800 border border-text-muted">
+          <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-accent-cold/10 text-accent-cold border border-accent-cold/30">
             {languageLabel}
           </span>
           {article.protected && (
-            <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-red-500/15 text-red-400 border border-red-400">
+            <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-accent-warm/10 text-accent-warm border border-accent-warm">
               🔒 Protetto
             </span>
           )}
         </div>
       </div>
 
-        <p className="text-text-muted mb-6 flex-grow leading-relaxed">
+        <p className="text-text-secondary mb-6 flex-grow leading-relaxed">
           {article.description}
         </p>
 
@@ -56,12 +56,12 @@ export default function ArticleCard({ article, onOpenCarousel, onOpenLeadGen }) 
             <button
               key={index}
               onClick={() => handleOptionClick(option)}
-              className={`px-6 py-3 rounded font-semibold transition-all ${
+              className={`px-6 py-3 rounded font-medium transition-all ${
                 option.type === 'carousel'
-                  ? 'bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-dark'
+                  ? 'bg-transparent border border-accent-cold text-accent-cold hover:bg-accent-cold hover:text-white'
                   : option.type === 'protected-download'
-                  ? 'bg-red-500 hover:bg-red-600 text-white'
-                  : 'bg-primary hover:bg-primary-dark text-dark'
+                  ? 'bg-accent-warm hover:bg-accent-warm/90 text-white'
+                  : 'bg-accent-warm hover:bg-accent-warm/90 text-white'
               } hover:-translate-y-0.5 hover:shadow-lg`}
             >
               {option.type === 'protected-download' ? '🔒 ' : ''}{option.label}

@@ -34,14 +34,14 @@ export default function Modal({ isOpen, onClose, children }) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute -top-12 right-0 text-white hover:text-primary transition-colors text-4xl font-light"
+          className="absolute -top-12 right-0 text-white hover:text-accent-warm transition-colors text-4xl font-light"
           aria-label="Close modal"
         >
           ×
         </button>
 
         {/* Content */}
-        <div className="bg-dark-light rounded-lg shadow-2xl overflow-hidden">
+        <div className="bg-bg rounded-lg shadow-2xl overflow-hidden border border-accent-cold/10">
           {children}
         </div>
       </div>

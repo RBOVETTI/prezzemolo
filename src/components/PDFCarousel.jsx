@@ -79,23 +79,23 @@ export default function PDFCarousel({ pdfUrl, title }) {
 
   return (
     <div className="flex flex-col items-center py-4 px-4 max-h-[85vh] overflow-y-auto">
-      <h2 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">{title}</h2>
+      <h2 className="text-xl md:text-2xl font-serif font-medium text-accent-warm mb-4 text-center">{title}</h2>
 
       <div
         className="relative flex items-center justify-center bg-gray-900 rounded-lg overflow-hidden max-w-full"
         onTouchStart={handleTouchStart}
       >
         {loading && (
-          <div className="absolute inset-0 flex items-center justify-center bg-dark-light">
-            <div className="text-primary text-lg">Loading PDF...</div>
+          <div className="absolute inset-0 flex items-center justify-center bg-bg">
+            <div className="text-accent-warm text-lg">Loading PDF...</div>
           </div>
         )}
 
         {error && (
-          <div className="flex items-center justify-center p-20 bg-dark-light rounded-lg">
+          <div className="flex items-center justify-center p-20 bg-bg rounded-lg">
             <div className="text-center">
-              <div className="text-red-400 text-lg mb-2">⚠️ Errore</div>
-              <div className="text-text-muted">{error}</div>
+              <div className="text-accent-warm text-lg mb-2">⚠️ Errore</div>
+              <div className="text-text-secondary">{error}</div>
             </div>
           </div>
         )}
@@ -106,7 +106,7 @@ export default function PDFCarousel({ pdfUrl, title }) {
           onLoadError={onDocumentLoadError}
           loading={
             <div className="flex items-center justify-center p-20">
-              <div className="text-primary">Loading...</div>
+              <div className="text-accent-warm">Loading...</div>
             </div>
           }
         >
@@ -123,7 +123,7 @@ export default function PDFCarousel({ pdfUrl, title }) {
         {!error && currentPage > 1 && (
           <button
             onClick={goToPrevPage}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary-dark text-dark w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold transition-all shadow-lg"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-accent-cold hover:bg-accent-cold/90 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold transition-all shadow-lg"
             aria-label="Previous page"
           >
             ‹
@@ -133,7 +133,7 @@ export default function PDFCarousel({ pdfUrl, title }) {
         {!error && currentPage < numPages && (
           <button
             onClick={goToNextPage}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary-dark text-dark w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold transition-all shadow-lg"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-accent-cold hover:bg-accent-cold/90 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold transition-all shadow-lg"
             aria-label="Next page"
           >
             ›
@@ -144,7 +144,7 @@ export default function PDFCarousel({ pdfUrl, title }) {
       {/* Page Indicator */}
       {!error && numPages && (
         <div className="mt-4 flex items-center gap-4 flex-wrap justify-center">
-          <div className="text-text-muted">
+          <div className="text-text-secondary">
             Page {currentPage} of {numPages}
           </div>
 
@@ -156,8 +156,8 @@ export default function PDFCarousel({ pdfUrl, title }) {
                 onClick={() => setCurrentPage(page)}
                 className={`w-2 h-2 rounded-full transition-all ${
                   page === currentPage
-                    ? 'bg-primary w-6'
-                    : 'bg-text-muted hover:bg-primary/50'
+                    ? 'bg-accent-warm w-6'
+                    : 'bg-text-secondary/30 hover:bg-accent-warm/50'
                 }`}
                 aria-label={`Go to page ${page}`}
               />
