@@ -201,6 +201,26 @@
         "Un framework PRATICO per guidare le decisioni",
         "Un riferimento quasi \"a checklist\" per accompagnare l'A(I)doption"
       ]
+    },
+    {
+      "id": 11,
+      "title": "L’impatto della Generative AI su didattica, docenti e discenti",
+      "description": "Ho cercato di condurre (nell'arco di due anni)  un'analisi approfondita dell'impatto trasformativo dell'Intelligenza Artificiale Generativa (GenAI) sul sistema dell'istruzione superiore, evidenziando il passaggio critico da un modello didattico standardizzato a nuovi paradigmi di apprendimento personalizzato e \"aumentato\". Attraverso una sintesi tra letteratura accademica e mie sperimentazioni sul campo condotte presso l'Università Cattolica, l'Università di Torino e l'ESCP , il lavoro esplora le dinamiche di interazione Uomo-Macchina, contrapponendo il modello \"Centauro\", caratterizzato da una divisione strategica del lavoro in cui l'umano mantiene il controllo alternandosi all'IA, al modello \"Cyborg\", che prevede una simbiosi profonda e continua su ogni sotto-compito. Tali modelli teorici trovano riscontro empirico nell'analisi di oltre 570.000 conversazioni studente-AI, che identificano pattern d'uso differenziati, dall'approccio passivo di \"oracolo\" a quello collaborativo di \"co-creatore\", dimostrando come le modalità più integrate e consapevoli generino risultati di apprendimento superiori. Il documento analizza inoltre la profonda ridefinizione dei ruoli in gioco. Da un lato, il docente evolve da dispensatore di conoscenza a \"facilitatore aumentato\" e \"direttore d'orchestra\" dell'esperienza formativa, assumendo la responsabilità critica della supervisione etica (human in the loop) per garantire la qualità dei contenuti e mitigare i rischi di bias e allucinazioni. Dall'altro, gli studenti sono chiamati a sviluppare nuove meta-competenze fondamentali, definite nel framework dell'AI Literacy, che includono non solo l'alfabetizzazione tecnica al prompting, ma soprattutto la capacità di valutazione critica e autoregolazione. Mi sento di sollevare un allarme sul rischio di assistere alla creazione di una \"piramide invertita\", ovvero la tendenza degli studenti a delegare all'IA competenze cognitive di ordine superiore (come analisi e creazione) a scapito delle basi fondamentali, compromettendo potenzialmente lo sviluppo cognitivo. Sul piano metodologico, l'articolo propone l'adozione di strategie didattiche innovative come la Flipped Classroom potenziata dall'IA e la pedagogia della co-creazione, in cui gli studenti partecipano attivamente alla progettazione degli assistenti virtuali e delle regole d'uso. Un concetto chiave rimarcato è quello del Cognitive Mirror, l'utilizzo dell'IA non per fornire risposte, ma per riflettere e strutturare il ragionamento dello studente, rendendo visibili passaggi logici e assunzioni implicite. Infine, il lavoro suggerisce un ripensamento radicale dei sistemi di valutazione, spostando il focus dal prodotto finale alla validazione del processo di pensiero, e conclude sottolineando l'urgenza di una risposta istituzionale sistemica. Per evitare di accentuare le disuguaglianze esistenti e per competere in uno scenario globale in rapida evoluzione, le università devono trascendere le sperimentazioni individuali per sviluppare una vera \"pedagogia digitale\" che integri l'IA come supplemento virtuoso e non come sostituto dell'interazione umana",
+      "topic": "GENAI",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Scarica il documento",
+          "file": "/articles/GENAI&EDUCATION.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia il carosello",
+          "file": "/articles/GENAI&EDUCATION-CAROSELLO.pfd"
+        }
+      ]
     }
   ]
 }
