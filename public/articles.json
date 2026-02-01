@@ -242,7 +242,7 @@
       "title": "The illusion of ``agentic AI'': core concepts, limits, and risks made obvious by comparing it with Agency Theory",
       "description": "his piece is the latest episode in my recurring series: I found a new buzzword and now I have to hoard papers, notes, and hype until my NAS starts judging me. The buzzword, today, is agentic AI. In the current discourse, ``agent'' is often a wonderfully convenient label: it sounds serious, sells even better, and makes us believe we are delegating to a digital colleague when, in practice, we are mostly stretching automation and, in some cases, making it more dangerous.\n\nSo I try to take a step back and ask what it really means to act on behalf of someone, by contrasting the contemporary enthusiasm for AI agents with an old friend from business economics: Agency Theory. If principals have always struggled to control their agents (from the East India companies to modern managers), adding a non-human agent that is opaque and has no intrinsic accountability should not help anyone sleep better.\n\nThe goal is not to demonize anything (I do not have the energy), but to clarify concepts, limits, and risks: misalignment, information asymmetries, competence illusions, monitoring costs, and above all that very comfortable temptation to say: ``the algorithm decided.'' Spoiler: responsibility stays with us.\n",
       "topic": "A(I)GENTS",
-      "language": "it",
+      "language": "en",
       "protected": false,
       "options": [
         {
