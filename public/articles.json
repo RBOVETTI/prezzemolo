@@ -221,6 +221,36 @@
           "file": "/articles/GENAI&EDUCATION-CAROSELLO.pdf"
         }
       ]
+    },
+    {
+      "id": 12,
+      "title": "The AI Literacy Paradox: Does Technical Knowledge Undermine Metacognitive Awareness?",
+      "description": "This paper starts from a mildly irritating (and, at times, counterintuitive) short circuit: the more technically proficient you become at using generative AI (prompting, parameters, APIs, and so on), the more likely you are to become less able to notice when you are wrong (or when you are delegating poorly). In other words, confidence increases, but the ability to monitor the quality of what you are doing does not necessarily increase with it, especially when tasks become genuinely complex.\nA further complication matters in real settings: most day-to-day AI use (including in companies) is concentrated on low-stakes, low-cognitive-value activities. Rather than training critical thinking and metacognition, this tends to reinforce comfortable routines: they work often enough that you start treating them as if they always work. The next step is predictable: you carry the same confidence (and the same level of vigilance) into domains where errors have a cost.\n\nIn the background sits a linguistic and conceptual problem: an anthropomorphic vocabulary that makes machines sound “human”, and, on the other side, a computational vocabulary that makes minds sound “machine-like”. This exchange is not innocent: it creates wrong expectations and epistemic confusion.\n\nIf this paper has a practical use, it is in the closing proposal: to prevent AI literacy from turning into a trap, training must go beyond technique and include (1) metacognitive calibration, (2) critical language literacy, and (3) concrete verification and validation habits embedded in everyday workflows.\n",
+      "topic": "A(I)GENTS",
+      "language": "en",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download the paper ",
+          "file": "/articles/COGNITIVITA-EN.pdf"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "The illusion of ``agentic AI'': core concepts, limits, and risks made obvious by comparing it with Agency Theory",
+      "description": "his piece is the latest episode in my recurring series: I found a new buzzword and now I have to hoard papers, notes, and hype until my NAS starts judging me. The buzzword, today, is agentic AI. In the current discourse, ``agent'' is often a wonderfully convenient label: it sounds serious, sells even better, and makes us believe we are delegating to a digital colleague when, in practice, we are mostly stretching automation and, in some cases, making it more dangerous.\n\nSo I try to take a step back and ask what it really means to act on behalf of someone, by contrasting the contemporary enthusiasm for AI agents with an old friend from business economics: Agency Theory. If principals have always struggled to control their agents (from the East India companies to modern managers), adding a non-human agent that is opaque and has no intrinsic accountability should not help anyone sleep better.\n\nThe goal is not to demonize anything (I do not have the energy), but to clarify concepts, limits, and risks: misalignment, information asymmetries, competence illusions, monitoring costs, and above all that very comfortable temptation to say: ``the algorithm decided.'' Spoiler: responsibility stays with us.\n",
+      "topic": "A(I)GENTS",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download the full paper",
+          "file": "/articles/A(I)GENTS-EN.pdf"
+        }
+      ]
     }
   ]
 }
