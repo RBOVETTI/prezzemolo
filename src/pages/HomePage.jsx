@@ -88,12 +88,6 @@ export default function HomePage() {
       <Header />
 
       <main className="container mx-auto px-5 max-w-6xl flex-grow pt-32 md:pt-36">
-        <section className="text-center mb-8">
-          <p className="text-text-secondary text-lg font-serif italic">
-            Riflessioni su AI, tecnologia e società
-          </p>
-        </section>
-
         <Filters
           topics={topics}
           selectedTopic={selectedTopic}
