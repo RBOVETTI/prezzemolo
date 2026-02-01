@@ -251,6 +251,21 @@
           "file": "/articles/A(I)GENTS-EN.pdf"
         }
       ]
+    },
+    {
+      "id": 14,
+      "title": "The Impact of Generative AI on Teaching, Faculty, and Learners. A snapshot of the progress in my understanding so far",
+      "description": "Over the past two years, I have tried to conduct an in-depth analysis of the transformative impact of Generative Artificial Intelligence (GenAI) on higher education, highlighting a critical shift from standardized instruction toward new paradigms of personalized and \"augmented\" learning.\nBy combining academic literature with my own field experiments carried out at Università Cattolica, the University of Turin, and ESCP, this work explores human-machine interaction dynamics and contrasts two collaboration models.\nThe first is the \"Centaur\" model, characterized by a strategic division of labor in which the human remains in control while alternating with the AI.\nThe second is the \"Cyborg\" model, which implies a deep and continuous symbiosis across every sub-task.\nThese theoretical models find empirical support in the analysis of more than 570,000 student-AI conversations, which reveal differentiated usage patterns, from a passive \"oracle\" stance to a collaborative \"co-creator\" stance.\nThe evidence suggests that more integrated and intentional modes of use lead to better learning outcomes.\nThe document also examines the profound redefinition of roles. On one side, the instructor shifts from a dispenser of knowledge to an \"augmented facilitator\" and an \"orchestra conductor\" of the learning experience, taking on the critical responsibility of ethical supervision (human in the loop) to ensure content quality and mitigate risks such as bias and hallucinations.\nOn the other side, students are required to develop new foundational meta-skills, captured by the AI Literacy framework, which include not only technical prompting literacy but, above all, critical evaluation and self-regulation.\nI raise a warning about the risk of an \"inverted pyramid\": a tendency for students to delegate higher-order cognitive skills (such as analysis and creation) to AI while neglecting the fundamentals, potentially undermining cognitive development.\nMethodologically, the paper proposes innovative teaching strategies such as AI-enhanced Flipped Classroom and a pedagogy of co-creation, in which students actively participate in designing virtual assistants and usage rules.\nA key concept emphasized throughout is the Cognitive Mirror: using AI not to provide answers, but to reflect and structure students' reasoning, making logical steps and implicit assumptions visible.\nFinally, the work argues for a radical redesign of assessment systems, shifting the focus from the final product to the validation of the thinking process.\nIt concludes by underscoring the urgency of a systemic institutional response.\nTo avoid exacerbating existing inequalities and to compete in a rapidly evolving global landscape, universities must move beyond individual experimentation and develop a true \"digital pedagogy\" that integrates AI as a virtuous supplement, not as a substitute for human interaction.\n",
+      "topic": "GENAI",
+      "language": "en",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download the paper",
+          "file": "/articles/GENAI&EDUCATION-EN.pdf"
+        }
+      ]
     }
   ]
 }
