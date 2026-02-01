@@ -266,6 +266,21 @@
           "file": "/articles/GENAI&EDUCATION-EN.pdf"
         }
       ]
+    },
+    {
+      "id": 15,
+      "title": "GenAI as an archetype of decomposition, recomposition, and generation ",
+      "description": "This is a (rather naive, but honest) attempt to convince myself that GenAI did not show\nup yesterday to ruin the party, but is mostly formalizing creative tricks humanity has been\nusing for a while—just without necessarily giving them fancy names.\nI start from my natural habitat (a serial hoarder of notes, links that die as 404s, and\nhalf-sketched ideas) and try to compare the mechanisms of transformers (segmentation,\nattention, recontextualization, reassembly) with four old artistic acquaintances: Chomskyan\ngenerative grammar, collage/cut-up, Eisensteinian montage, and above all musique concrète\nà la Schaeffer.\nThe hypothesis is simple: if today we are amazed that a machine can “generate”, it is also\nbecause we have conveniently forgotten how many times we have generated (by hand, on\ntape, with scissors and glue, or with rules) by remixing pre-existing material until something\nemerged that was not there before—or at least was not visible.",
+      "topic": "GENAI",
+      "language": "en",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download the paper ",
+          "file": "/articles/AI&ARTE-EN.pdf"
+        }
+      ]
     }
   ]
 }
