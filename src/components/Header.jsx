@@ -6,6 +6,9 @@ export default function Header() {
           <h1 className="text-3xl md:text-4xl font-serif font-light text-text-primary mb-1 tracking-wide">
             All you need is thought
           </h1>
+          <p className="text-text-secondary text-sm md:text-base font-serif">
+            di Riccardo Bovetti
+          </p>
           <p className="text-text-secondary text-base md:text-lg font-serif italic">
             Una raccolta di testicoli variegati (intesi come piccoli testi, naturalmente)
           </p>
