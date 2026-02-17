@@ -281,6 +281,41 @@
           "file": "/articles/AI&ARTE-EN.pdf"
         }
       ]
+    },
+    {
+      "id": 16,
+      "title": "Pensa per noi, ci fa lavorare di più, e continua a sembrarci pure una buona idea ",
+      "description": "Questo articolo prova a fare una cosa semplice (che poi semplice non è): smettere di discutere di AI come se le alternative fossero solo \"ci rende tutti più produttivi\" oppure \"ci ruba il lavoro\" e spostare la domanda dove fa un po' più male: cosa sta succedendo dentro la testa di chi la usa tutti i giorni? Quando deleghi a un modello generativo pezzi di scrittura, analisi e ragionamento, non stai solo risparmiando tempo: stai anche cambiando (a volte senza accorgertene) il modo con il quale cerhi e valuti informazioni ed  alternative e quanto ti fidi del tuo giudizio. \nPer capirci qualcosa metto in dialogo tre lenti recenti: il System 0 (l'AI che \"prepara\" il mondo prima che tu attivi System 1 e System 2), la \"Tri-System Theory\" (l'AI come terzo sistema cognitivo esterno, che può aiutarti o sostituirti a seconda di come la usi) e un filone più organizzativo che mostra un paradosso curioso (ma ampiamente verificabile): invece di alleggerire il lavoro, spesso lo intensifica. Letti insieme, questi pezzi suggeriscono un corto circuito auto-alimentante: più comfort e più capacità percepite, meno vigilanza e autonomia cognitiva reale, e in mezzo una bella dose di \\textit{automation bias}. Nella seconda parte mi prendo la libertà di fare quello che si fa quando la ricerca corre più lenta del fenomeno da ricercare (sapendo che il risultato durerà quanto gelato nel deserto): speculare onestamente. Propongo un modello a fasi della relazione cognitiva con l'AI e l'idea di \"resa cognitiva qualificata e consapevole\": non un invito alla resa, ma un tentativo di darle regole, confini e un minimo di dignità operativa (cioè: come usarla senza farci usare). Per lo meno ci ho provato\n",
+      "topic": "GENAI",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Scarica l'articolo completo",
+          "file": "/articles/COGNITIVESURRENDER.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia il carosello",
+          "file": "/articles/COGNITIVESURRENDER-CAROSELLO.pdf"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "It thinks for us, makes us work more, and even continues to seem like a good idea",
+      "description": "This article tries to do a simple thing (which is not actually simple): stop discussing AI as if the alternatives were only \"it makes us all more productive\" or \"it steals our jobs\" and move the question to where it hurts a bit more: what is happening inside the head of those who use it every day? When you delegate pieces of writing, analysis, and reasoning to a generative model, you are not just saving time: you are also changing (sometimes without realizing it) the way you search for and evaluate information and alternatives and how much you trust your judgment.\nTo understand something, I put three recent lenses into dialogue: System 0 (the AI that \"prepares\" the world before you activate System 1 and System 2), the Tri-System Theory (AI as a third external cognitive system, which can help or replace you depending on how you use it) and a more organizational strand that shows a curious (but widely verifiable) paradox: instead of lightening work, it often intensifies it. Read together, these pieces suggest a self-feeding short circuit: more comfort and perceived capabilities, less vigilance and real cognitive autonomy, and in the middle a good dose of \\textit{automation bias}. In the second part, I take the liberty of doing what one does when research runs slower than the phenomenon to be researched (knowing that the result will last as long as ice cream in the desert): speculate honestly. I propose a phased model of the cognitive relationship with AI and the idea of \"qualified and conscious cognitive surrender\": not an invitation to surrender, but an attempt to give it rules, boundaries, and a minimum of operational dignity (that is: how to use it without letting it use us). At least I tried.",
+      "topic": "GENAI",
+      "language": "en",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Download the article",
+          "file": "/articles/COGNITIVESURRENDER-EN.pdf"
+        }
+      ]
     }
   ]
 }
