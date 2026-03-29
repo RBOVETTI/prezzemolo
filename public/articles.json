@@ -323,14 +323,15 @@
       "description": "Il primo capitolo della \"saga\" in divenire ... From God to Google (passando per Goodenough)",
       "topic": "AI",
       "language": "it",
-      "protected": false,
+      "protected": true,
       "options": [
         {
           "type": "download",
           "label": "Scarica l'EBOOK",
           "file": "/articles/Complessita&SistemidiSenso.pdf"
         }
-      ]
+      ],
+      "valueProposition": "Questo documento è parte di un progetto \"collettivo\" di scrittura che porterà nel giro di qualche mese alla pubblicazione di un EBOOK sul tema della trasformazione socio-tecnologica dell'AI. Per rispetto ai diversi contributori voglio tenere tracciati gli accessi dei \"lettori\" per potermi confrontare in modo collaborativo"
     }
   ]
 }
