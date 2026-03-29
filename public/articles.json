@@ -316,6 +316,21 @@
           "file": "/articles/COGNITIVESURRENDER-EN.pdf"
         }
       ]
+    },
+    {
+      "id": 18,
+      "title": "Complessità e Sistemi di senso",
+      "description": "Il primo capitolo della \"saga\" in divenire ... From God to Google (passando per Goodenough)",
+      "topic": "AI",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Scarica l'EBOOK",
+          "file": "/articles/Complessita&SistemidiSenso.pdf"
+        }
+      ]
     }
   ]
 }
