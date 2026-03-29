@@ -326,8 +326,8 @@
       "protected": true,
       "options": [
         {
-          "type": "download",
-          "label": "Scarica l'EBOOK",
+          "type": "protected-download",
+          "label": "Scarica l'EBOOK in \"divenire\" ",
           "file": "/articles/Complessita&SistemidiSenso.pdf"
         }
       ],
