@@ -320,14 +320,14 @@
     {
       "id": 18,
       "title": "Complessità e Sistemi di senso",
-      "description": "Il primo capitolo della \"saga\" in divenire ... From God to Google (passando per Goodenough)",
+      "description": "Il primo ed il secondo capitolo della \"saga\" in divenire ... 1) From God to Google (passando per Goodenough) 2) Novità vs Innovazione ",
       "topic": "AI",
       "language": "it",
       "protected": true,
       "options": [
         {
           "type": "protected-download",
-          "label": "Scarica l'EBOOK in \"divenire\" ",
+          "label": "Scarica l'EBOOK in ",
           "file": "/articles/Complessita&SistemidiSenso.pdf"
         }
       ],
