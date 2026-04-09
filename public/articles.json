@@ -332,6 +332,21 @@
         }
       ],
       "valueProposition": "Questo documento è parte di un progetto \"collettivo\" di scrittura che porterà nel giro di qualche mese alla pubblicazione di un EBOOK sul tema della trasformazione socio-tecnologica dell'AI. Per rispetto ai diversi contributori voglio tenere tracciati gli accessi dei \"lettori\" per potermi confrontare in modo collaborativo"
+    },
+    {
+      "id": 19,
+      "title": "La costituzione dell'AI ",
+      "description": "La presente Costituzione è al tempo stesso un testo di principio e un portale di accesso operativo a tutta la “conoscenza” che ho accumulato in questi quasi tre anni di lavoro a fianco delle organizzazioni nei processi di A(i)doption. Ogni articolo enuncia un principio fondante del governo dell'AI in azienda ed indica contestualmente a quale fase e strumento del percorso A(I)doption quel principio si traduce in azione concreta.\nIl framework A(I)doption articola il percorso di trasformazione AI in quattro fasi integrate  (AI Maturity Model, Upskilling & Adoption, Discovery Use Case, Pilot & Transform )ed in dieci step operativi che trasformano le condizioni di partenza in risultati misurabili. La Costituzione non sostituisce questo percorso: lo fonda, lo legittima stabilendone i confini.\nIl presente documento nasce da una domanda semplice nella formulazione, ma radicale nelle implicazioni: è sufficiente una policy per governare l'intelligenza artificiale in azienda? La risposta che emerge dall'analisi comparata dei modelli di adozione più avanzati è scevra d’ogni equivoco: è dannatamente indispensabile, ma non è sufficiente.\n\nUna policy regola comportamenti, accessi, diritti e processi. Una costituzione, invece, stabilisce i principi che precedono ed anticipano (quasi come un quadro etico di riferimento) qualsiasi regola, i diritti che nessuna norma operativa può comprimere, i poteri che devono essere riconosciuti e bilanciati, e le garanzie che rendono il sistema legittimo agli occhi di chi lo abita e lo attraversa. La differenza non è di forma: è di natura. Questo testo si ispira consapevolmente alla struttura della nostra Costituzione italiana, non per esercizio retorico, ma perché quella struttura ha dimostrato di saper tenere insieme, in modo duraturo e intelligente, visione e norma con principi e ordinamento nel rispetto di diritti e doveri. La stessa architettura è ciò di cui le organizzazioni hanno bisogno quando l'AI smette di essere un progetto e diventa un regime operativo permanente.\n\nLa struttura adottata, costituita da Preambolo, Principi fondamentali, Parte I sui diritti e doveri, Parte II sull'ordinamento e sul ciclo di vita dei sistemi AI, Disposizioni finali, è volutamente calibrata per anticipare la maturità organizzativa, non per fotografarla nella sua essenza. Il tono è istituzionale ma non per forza notarile. La provocazione risiede nella tesi: l'AI in azienda è una questione di ordinamento prima ancora che di tecnologia.",
+      "topic": "AI",
+      "language": "it",
+      "protected": false,
+      "options": [
+        {
+          "type": "download",
+          "label": "Scarica la COSTITUZIONE",
+          "file": "/articles/COSTITUZIONEAI.pdf"
+        }
+      ]
     }
   ]
 }
