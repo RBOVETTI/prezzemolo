@@ -7,7 +7,10 @@
       "Bash(git push)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\naggiungi articoli EN e aggiornamenti\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(sips *)"
+      "Bash(sips *)",
+      "WebFetch(domain:writings.rbovetti.com)",
+      "Bash(curl -s -L --max-time 10 -A \"LinkedInBot/1.0\" https://writings.rbovetti.com/)",
+      "Bash(curl -sv --max-time 10 https://writings.rbovetti.com/)"
     ]
   }
 }
