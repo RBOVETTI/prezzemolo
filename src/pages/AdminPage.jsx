@@ -19,7 +19,29 @@ export default function AdminPage() {
   const [sendResult, setSendResult] = useState(null);
 
   useEffect(() => {
-    if (authenticated) loadData();
+    if (!authenticated) return;
+    let cancelled = false;
+    async function load() {
+      setLoading(true);
+      try {
+        const [leadsRes, articlesRes] = await Promise.all([
+          fetch('/api/get-leads'),
+          fetch('/articles.json'),
+        ]);
+        const leads = await leadsRes.json();
+        const articles = await articlesRes.json();
+        if (!cancelled) {
+          setLeadsData(leads);
+          setArticlesData(articles.articles || []);
+        }
+      } catch (err) {
+        console.error('Errore caricamento dati:', err);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+    load();
+    return () => { cancelled = true; };
   }, [authenticated]);
 
   useEffect(() => {
@@ -32,24 +54,6 @@ export default function AdminPage() {
     }
     setSendResult(null);
   }, [selectedArticle, leadsData]);
-
-  async function loadData() {
-    setLoading(true);
-    try {
-      const [leadsRes, articlesRes] = await Promise.all([
-        fetch('/api/get-leads'),
-        fetch('/articles.json'),
-      ]);
-      const leads = await leadsRes.json();
-      const articles = await articlesRes.json();
-      setLeadsData(leads);
-      setArticlesData(articles.articles || []);
-    } catch (err) {
-      console.error('Errore caricamento dati:', err);
-    } finally {
-      setLoading(false);
-    }
-  }
 
   async function handleAuth(e) {
     e.preventDefault();
@@ -77,7 +81,13 @@ export default function AdminPage() {
     const activeLeads = (leadsData[selectedArticle] || []).filter(l => selectedLeads[l.email]);
     const article = articlesData.find(a => a.title === selectedArticle);
     const protectedOpt = article?.options?.find(o => o.type === 'protected-download');
-    const pdfUrl = window.location.origin + protectedOpt?.file;
+
+    if (!protectedOpt?.file) {
+      setSendResult({ ok: false, error: 'PDF non trovato per questo articolo' });
+      return;
+    }
+
+    const pdfUrl = window.location.origin + protectedOpt.file;
 
     setSending(true);
     setSendResult(null);
@@ -181,7 +191,7 @@ export default function AdminPage() {
                         >
                           <input
                             type="checkbox"
-                            checked={selectedLeads[lead.email] ?? true}
+                            checked={selectedLeads[lead.email] || false}
                             onChange={e =>
                               setSelectedLeads(prev => ({ ...prev, [lead.email]: e.target.checked }))
                             }
