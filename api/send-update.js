@@ -2,6 +2,15 @@ import nodemailer from 'nodemailer';
 
 export const config = { api: { bodyParser: true } };
 
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -25,19 +34,24 @@ export default async function handler(req, res) {
     },
   });
 
+  let sent = 0;
   try {
     for (const lead of leads) {
       await sendUpdateEmail(transporter, { ...lead, articleTitle, pdfUrl, message });
+      sent++;
     }
-    return res.status(200).json({ sent: leads.length });
+    return res.status(200).json({ sent });
   } catch (error) {
     console.error('Errore send-update:', error);
-    return res.status(500).json({ error: 'Errore del server', details: error.message });
+    return res.status(500).json({ error: 'Errore del server', sent, details: error.message });
   }
 }
 
 async function sendUpdateEmail(transporter, { name, email, articleTitle, pdfUrl, message }) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() || 'https://writing.rbovetti.com';
+  const safeName = escapeHtml(name);
+  const safeTitle = escapeHtml(articleTitle);
+  const safeMessage = escapeHtml(message);
 
   await transporter.sendMail({
     from: `"All you need is thought" <${process.env.GMAIL_USER}>`,
@@ -64,11 +78,11 @@ async function sendUpdateEmail(transporter, { name, email, articleTitle, pdfUrl,
             <h1>All you need is thought</h1>
           </div>
           <div class="content">
-            <h2>Ciao ${name}!</h2>
+            <h2>Ciao ${safeName}!</h2>
             <p>Abbiamo aggiornato il documento che hai scaricato:</p>
-            <h3>${articleTitle}</h3>
+            <h3>${safeTitle}</h3>
             <div class="update-box">
-              <p>${message}</p>
+              <p>${safeMessage}</p>
             </div>
             <p style="text-align: center;">
               <a href="${pdfUrl}" class="button">Scarica la versione aggiornata</a>
