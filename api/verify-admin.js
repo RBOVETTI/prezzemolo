@@ -1,4 +1,5 @@
-// api/verify-admin.js
+import crypto from 'crypto';
+
 export const config = { api: { bodyParser: true } };
 
 export default function handler(req, res) {
@@ -10,9 +11,18 @@ export default function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const { password } = req.body;
-  if (!password || password !== process.env.ADMIN_PASSWORD) {
+  try {
+    const { password } = req.body || {};
+    if (!password || !process.env.ADMIN_PASSWORD) {
+      return res.status(401).json({ error: 'Password non valida' });
+    }
+    const a = Buffer.from(password);
+    const b = Buffer.from(process.env.ADMIN_PASSWORD);
+    if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) {
+      return res.status(401).json({ error: 'Password non valida' });
+    }
+    return res.status(200).json({ ok: true });
+  } catch {
     return res.status(401).json({ error: 'Password non valida' });
   }
-  return res.status(200).json({ ok: true });
 }
