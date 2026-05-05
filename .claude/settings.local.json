@@ -10,7 +10,9 @@
       "Bash(sips *)",
       "WebFetch(domain:writings.rbovetti.com)",
       "Bash(curl -s -L --max-time 10 -A \"LinkedInBot/1.0\" https://writings.rbovetti.com/)",
-      "Bash(curl -sv --max-time 10 https://writings.rbovetti.com/)"
+      "Bash(curl -sv --max-time 10 https://writings.rbovetti.com/)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit *)"
     ]
   }
 }
