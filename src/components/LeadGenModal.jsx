@@ -107,7 +107,35 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
     }
   };
 
-  // Schermata: accesso diretto (già registrato)
+  // Schermata: grazie / download avviato (priorità su alreadyDownloaded)
+  if (showThankYou) {
+    return (
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <div className="p-8 text-center">
+          <div className="text-6xl mb-4 text-accent-warm">✓</div>
+          <h2 className="text-3xl font-serif font-medium text-accent-warm mb-4">Grazie!</h2>
+          <p className="text-text-secondary mb-4">
+            Il download del documento dovrebbe partire automaticamente.
+          </p>
+          <p className="text-text-secondary mb-6">
+            Riceverai anche un'email con il link al documento.
+          </p>
+          {downloadUrl && (
+            <a
+              href={downloadUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-3 bg-accent-warm text-white font-medium rounded hover:bg-accent-warm/90 transition-colors"
+            >
+              Download manuale
+            </a>
+          )}
+        </div>
+      </Modal>
+    );
+  }
+
+  // Schermata: accesso diretto (visite successive)
   if (alreadyDownloaded && directUrl) {
     return (
       <Modal isOpen={isOpen} onClose={onClose}>
@@ -133,34 +161,6 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
               Non sei tu? Registra un nuovo accesso
             </button>
           </div>
-        </div>
-      </Modal>
-    );
-  }
-
-  // Schermata: grazie / download avviato
-  if (showThankYou) {
-    return (
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <div className="p-8 text-center">
-          <div className="text-6xl mb-4 text-accent-warm">✓</div>
-          <h2 className="text-3xl font-serif font-medium text-accent-warm mb-4">Grazie!</h2>
-          <p className="text-text-secondary mb-4">
-            Il download del documento dovrebbe partire automaticamente.
-          </p>
-          <p className="text-text-secondary mb-6">
-            Riceverai anche un'email con il link al documento.
-          </p>
-          {downloadUrl && (
-            <a
-              href={downloadUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-accent-warm text-white font-medium rounded hover:bg-accent-warm/90 transition-colors"
-            >
-              Download manuale
-            </a>
-          )}
         </div>
       </Modal>
     );
