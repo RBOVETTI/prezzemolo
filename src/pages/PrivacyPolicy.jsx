@@ -76,6 +76,21 @@ export default function PrivacyPolicy() {
             <p className="mt-2">
               I cookie tecnici non richiedono il consenso dell'utente ai sensi del GDPR.
             </p>
+
+            <h3 className="text-xl font-medium text-accent-warm mb-2 mt-4">4.1 Memoria locale (localStorage)</h3>
+            <p>
+              Questo sito utilizza il <strong>localStorage</strong> del browser per ricordare i documenti
+              che hai già richiesto, al fine di evitarti di ripetere la registrazione ad ogni visita.
+            </p>
+            <p className="mt-2">
+              In questo storage vengono salvati esclusivamente i <strong>titoli dei documenti scaricati</strong>,
+              senza alcun dato personale (nessuna email, nome o altro identificativo).
+              Questi dati rimangono sul tuo dispositivo e non vengono mai trasmessi ai nostri server.
+            </p>
+            <p className="mt-2">
+              Puoi eliminarli in qualsiasi momento dalle impostazioni del tuo browser:<br />
+              <em>Impostazioni → Privacy → Cancella dati di navigazione → Dati dei siti</em>
+            </p>
           </section>
 
           <section>
