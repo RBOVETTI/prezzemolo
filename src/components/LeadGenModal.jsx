@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from './Modal';
 
 const LS_KEY = 'prezzemolo_downloads';
@@ -23,6 +23,8 @@ function saveDownloaded(title) {
 }
 
 export default function LeadGenModal({ isOpen, onClose, article }) {
+  if (!article) return null;
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -37,7 +39,9 @@ export default function LeadGenModal({ isOpen, onClose, article }) {
   const [downloadUrl, setDownloadUrl] = useState('');
   const [forceForm, setForceForm] = useState(false);
 
-  if (!article) return null;
+  useEffect(() => {
+    setForceForm(false);
+  }, [article]);
 
   const protectedOpt = article.options?.find(o => o.type === 'protected-download');
   const directUrl = protectedOpt?.file ? window.location.origin + protectedOpt.file : null;
