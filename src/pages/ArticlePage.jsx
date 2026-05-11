@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { findBySlug, getPrimary, isPair } from '../utils/articles'
+import { buildScholarlyArticleJsonLd } from '../utils/seo'
 import SEOHead from '../components/SEOHead'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -60,6 +61,12 @@ export default function ArticlePage() {
         language={primary.language}
         type="article"
         hreflangSameUrl={bilingual}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(buildScholarlyArticleJsonLd(primary, slug))
+        }}
       />
 
       <div className="min-h-screen flex flex-col bg-bg-primary">
