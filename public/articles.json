@@ -7,6 +7,9 @@
       "topic": "A(I)GENTS",
       "language": "en",
       "protected": false,
+      "slug": "aigents-funzione-finance",
+      "linkedArticleId": 2,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -22,6 +25,9 @@
       "topic": "A(I)GENTS",
       "language": "it",
       "protected": false,
+      "slug": "aigents-funzione-finance",
+      "linkedArticleId": 1,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -42,6 +48,9 @@
       "topic": "A(I)GENTS",
       "language": "it",
       "protected": false,
+      "slug": "illusione-ai-agentica",
+      "linkedArticleId": 13,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -62,6 +71,9 @@
       "topic": "IT ORG",
       "language": "it",
       "protected": false,
+      "slug": "venere-marte-stessa-galassia",
+      "linkedArticleId": null,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -82,6 +94,9 @@
       "topic": "A(I)GENTS",
       "language": "it",
       "protected": false,
+      "slug": "dal-niente-allagente",
+      "linkedArticleId": null,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -102,6 +117,9 @@
       "topic": "FILOSOF(I)A",
       "language": "it",
       "protected": false,
+      "slug": "concrethica",
+      "linkedArticleId": null,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -122,6 +140,9 @@
       "topic": "GENAI",
       "language": "it",
       "protected": false,
+      "slug": "distant-reading-llm",
+      "linkedArticleId": null,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -142,6 +163,9 @@
       "topic": "GENAI",
       "language": "it",
       "protected": false,
+      "slug": "genai-archetipo-scomposizione",
+      "linkedArticleId": 15,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -162,6 +186,9 @@
       "topic": "GENAI",
       "language": "it",
       "protected": false,
+      "slug": "paradosso-ai-literacy",
+      "linkedArticleId": 12,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -182,6 +209,9 @@
       "topic": "AI",
       "language": "it",
       "protected": true,
+      "slug": "framework-integrazione-ai",
+      "linkedArticleId": null,
+      "abstract": "",
       "options": [
         {
           "type": "protected-download",
@@ -209,6 +239,9 @@
       "topic": "GENAI",
       "language": "it",
       "protected": false,
+      "slug": "impatto-genai-didattica",
+      "linkedArticleId": 14,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -229,6 +262,9 @@
       "topic": "A(I)GENTS",
       "language": "en",
       "protected": false,
+      "slug": "paradosso-ai-literacy",
+      "linkedArticleId": 9,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -244,6 +280,9 @@
       "topic": "A(I)GENTS",
       "language": "en",
       "protected": false,
+      "slug": "illusione-ai-agentica",
+      "linkedArticleId": 3,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -259,6 +298,9 @@
       "topic": "GENAI",
       "language": "en",
       "protected": false,
+      "slug": "impatto-genai-didattica",
+      "linkedArticleId": 11,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -274,6 +316,9 @@
       "topic": "GENAI",
       "language": "en",
       "protected": false,
+      "slug": "genai-archetipo-scomposizione",
+      "linkedArticleId": 8,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -289,6 +334,9 @@
       "topic": "GENAI",
       "language": "it",
       "protected": false,
+      "slug": "ai-pensa-per-noi",
+      "linkedArticleId": 17,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -309,6 +357,9 @@
       "topic": "GENAI",
       "language": "en",
       "protected": false,
+      "slug": "ai-pensa-per-noi",
+      "linkedArticleId": 16,
+      "abstract": "",
       "options": [
         {
           "type": "download",
@@ -324,6 +375,9 @@
       "topic": "AI",
       "language": "it",
       "protected": true,
+      "slug": "complessita-sistemi-di-senso",
+      "linkedArticleId": null,
+      "abstract": "",
       "options": [
         {
           "type": "protected-download",
@@ -340,6 +394,9 @@
       "topic": "AI",
       "language": "it",
       "protected": false,
+      "slug": "la-costituzione-dellai",
+      "linkedArticleId": null,
+      "abstract": "",
       "options": [
         {
           "type": "download",
