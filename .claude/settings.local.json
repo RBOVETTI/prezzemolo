@@ -12,7 +12,20 @@
       "Bash(curl -s -L --max-time 10 -A \"LinkedInBot/1.0\" https://writings.rbovetti.com/)",
       "Bash(curl -sv --max-time 10 https://writings.rbovetti.com/)",
       "Bash(git commit -m ' *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git -C /Users/riccardo.bovetti/LocalOnly/SITIWEB/Prezzemolo log --oneline -10)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(a.get\\('id'\\), a.get\\('language'\\), a.get\\('title'\\)[:50]\\) for a in d['articles']]\")",
+      "Bash(python3 *)",
+      "Bash(git -C /Users/riccardo.bovetti/LocalOnly/SITIWEB/Prezzemolo add docs/superpowers/plans/2026-05-11-seo-strategy.md)",
+      "Bash(git -C /Users/riccardo.bovetti/LocalOnly/SITIWEB/Prezzemolo commit -m ' *)",
+      "Bash(node *)",
+      "Bash(git checkout *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git -C /Users/riccardo.bovetti/LocalOnly/SITIWEB/Prezzemolo add src/pages/HomePage.jsx src/pages/PrivacyPolicy.jsx src/components/Header.jsx)",
+      "Bash(git -C /Users/riccardo.bovetti/LocalOnly/SITIWEB/Prezzemolo commit -m \"feat: aggiunge meta tag SEO a HomePage e PrivacyPolicy, link About in Header\")",
+      "Bash(git -C /Users/riccardo.bovetti/LocalOnly/SITIWEB/Prezzemolo add src/utils/seo.js src/pages/ArticlePage.jsx)",
+      "Bash(git -C /Users/riccardo.bovetti/LocalOnly/SITIWEB/Prezzemolo commit -m \"feat: aggiunge JSON-LD ScholarlyArticle alle pagine articolo\")"
     ]
   }
 }
