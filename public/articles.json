@@ -9,7 +9,7 @@
       "protected": false,
       "slug": "aigents-funzione-finance",
       "linkedArticleId": 2,
-      "abstract": "",
+      "abstract": "AI agents will not transform Finance by being smarter, but by being governable. I tried to dismantles the hype around autonomous agents, reframing them as delegated actors embedded in processes, roles, and accountability structures. Without integration and stewardship, agents are not innovation, they are organizational risk.",
       "options": [
         {
           "type": "download",
@@ -27,7 +27,7 @@
       "protected": false,
       "slug": "aigents-funzione-finance",
       "linkedArticleId": 1,
-      "abstract": "",
+      "abstract": "Gli AI agent non trasformeranno la Finanza perché saranno più intelligenti, ma perché saranno governabili. Ho provato a smontare l'hype attorno agli agenti autonomi, riformulandoli come attori delegati inseriti in processi, ruoli e strutture di accountability. Senza integrazione e stewardship, gli agent non sono innovazione: sono un rischio organizzativo.",
       "options": [
         {
           "type": "download",
@@ -50,7 +50,7 @@
       "protected": false,
       "slug": "illusione-ai-agentica",
       "linkedArticleId": 13,
-      "abstract": "",
+      "abstract": "Nel corso dell’ultimo anno si è diffuso un entusiasmo (interesse?) crescente attorno al concetto di “AI agentica”, ovvero sistemi di intelligenza artificiale capaci di agire con una qualche forma di autonomia perseguendo obiettivi più che eseguendo un processo avente questo fine.  Ma a fronte di questo interesse, mi sorge spontanea una domanda provocatoria: quanti di quelli che usano questo termine hanno riflettuto, davvero, su cosa significa “agente”, su quali origini abbia il termine e quali trappole si nascondano dietro il suo utilizzo disinvolto? ",
       "options": [
         {
           "type": "download",
@@ -73,7 +73,7 @@
       "protected": false,
       "slug": "venere-marte-stessa-galassia",
       "linkedArticleId": null,
-      "abstract": "",
+      "abstract": "Colmare il presunto (e spesso assolutorio) divario culturale, che oramai da anni si sintetizza nella metafora ”il CFO proviene da Venere, mentre il CTO da Marte”, è possibile e necessario perchè oggi più che mai abbiamo bisogno di orientare l’innovazione e la performance delle aziende tecnologicamente trasformate verso la creazione di valore sostenibile e inclusivo: non solo profitti, ma impatto positivo su dipendenti, clienti e comunità.",
       "options": [
         {
           "type": "download",
@@ -96,7 +96,7 @@
       "protected": false,
       "slug": "dal-niente-allagente",
       "linkedArticleId": null,
-      "abstract": "",
+      "abstract": "Un “wrapped” ragionato, e come sempre un po’ disilluso, dell’evoluzione dell’AI fino al 2025. Approfitto del fine anno per archiviare i miei testi di riferimento degli anni passati in attesa di dedicarmi a nuove letture e provo a tirare una riga: doverosamente inizio con una cornice storica (dai sistemi esperti al deep learning, fino all’era Transformer) per poi ricostruire quello che ho visto in prima persona accadere dal 2022 ad oggi passando attraverso l’entusiasmo, lo shock culturale ed il “pilot purgatory”, tra hype, shadow AI, dati sporchi e business case che collassano sotto il peso dell’inferenza, spesso per task che una macro di Excel avrebbe risolto con più dignità. Provo a spiegare perchè per me il 2025 segna il cambio ontologico: dalla “chat” all’“act”, ovvero dall’output sincrono all’agency, con un focus su anatomia dell’agente moderno (core LLM, memoria, tools, planning) e pattern di robustezza accompagnando però l’emergente crisi cognitiva: performance senza apprendimento, illusione di competenza e di ragionamento e, per quanto riguarda l’istruzione superiore, la necessità di un nuovo contratto didattico “from cheat to chat”. L’augurio per il 2026 è buona decomplexity a tutti, nella certezza oramai che vince chi sa governare, non chi compra licenze a caso.",
       "options": [
         {
           "type": "download",
@@ -119,7 +119,7 @@
       "protected": false,
       "slug": "concrethica",
       "linkedArticleId": null,
-      "abstract": "",
+      "abstract": "Navigare nelle acque turbolente della trasformazione digitale richiede lo sviluppo, e talvolta la riscoperta e l’affinamento, di strumenti culturali come l’etica e la filosofia, che non associamo immediatamente al dominio delle tecnologie. Tuttavia, la bussola etica necessaria per trovare la rotta verso uno sviluppo umano, in un contesto di accelerazione digitale che sembra relegare l’uomo ai margini, è sia una necessità sia un’opzione. Purtroppo, questa bussola deve ancora essere progettata, e ci troviamo già oggi a navigare in questi flutti.",
       "options": [
         {
           "type": "download",
@@ -142,7 +142,7 @@
       "protected": false,
       "slug": "distant-reading-llm",
       "linkedArticleId": null,
-      "abstract": "",
+      "abstract": "Ho provato a dare una forma ad una disordinata collezione di appunti raccolti come risposta ad una suggestione sulla tematica del “Distant Writing”  e dai riferimenti (indiretti) in esso contenuti circa le metodologie di “Distant Reading. Questa porta aperta su concettualizzazioni importanti di processi metodologici che possono sembrare “intuitivi” mi ha fatto intravedere altri spiragli di luce che filtravano da altre porte concettuali precedentemente solo schiuse interrogandomi sul fatto che queste potessero in qualche modo essere connesse. Queste porte “schiuse” sono la metodologia della Systematic Review  ed il deep learning applicato alle fonti dati di “natura testuale” che di fatto è la meccanica di addestramento degli LLM che negli ultimi due anni hanno adicalmente trasformato la nostra esperienza digitale. Mi sono quindi baloccato nell’indagare possibili similitudini nonché certe e sostanziali differenze ed a costruire un framework teorico pratico nel quale poter “sperimentare” consapevolmente qualche esercizio di “distant reading 4.0”. L’assoluta mancanza di originalità nelle mie conclusioni mi rassicura circa la relativa bontà delle medesime e mi riposiziona nello spazio che io stesso preferisco considerare il mio, ovverosia quello di meta-divulgatore entusiasta.",
       "options": [
         {
           "type": "download",
@@ -165,7 +165,7 @@
       "protected": false,
       "slug": "genai-archetipo-scomposizione",
       "linkedArticleId": 15,
-      "abstract": "",
+      "abstract": "Attraverso un’analisi comparativa sistematica, (che ho voluto focalizzare sulla musica concreta di Pierre Schaeffer come paradigma teorico privilegiato perché in questi ultime settimane mi sono trovato, anche in questo caso in modo compulsivo, ad immergermi in quei suoni) ho provato a capire se le strategie di segmentazione, decontestualizzazione, attenzione selettiva e riassemblaggio precedano storicamente e anticipino concettualmente le logiche computazionali della Generative\nAI contemporanea e le possano avere in qualche modo, anche solo implicito, condizionate.\nPer quanto osservandola dal di fuori la GenAI appaia come una discontinuità radicale rispetto a tutto quello che abbiamo conosciuto ed usato sino ad oggi, sono convinto che la formalizzazione computazionale di intuizioni creative fondamentali che attraversano discipline e epoche, possano\naprire prospettive inedite per una sorta teoria unificata della creatività generativa.\nSotto il cofano delle GenAI con le quali oramai abbiamo ridefinito i confini della nostra quotidiana interrelazione digitale, ronza un motore basato su cosiddetto \"meccanismo di attenzione\" che utilizza Query, Key e Value per creare rappresentazioni contestuali dinamiche, processando simultaneamente tutti i token o lessemi di una sequenza (i.e. frase, periodo). I principi fondamentali che governano il funzionamento di questi meccanismi, segmentazione di materiali preesistenti, ricontestualizzazione, assemblaggio guidato da dinamiche di attenzione selettiva, e emergenza di nuovi significati, non sono esclusivi del dominio computazionale contemporaneo.\nAl contrario, seppure in forme diverse, si trovano in diverse pratiche creative e scientifiche\nconsolidate, suggerendo l’esistenza di pattern universali di ricomposizione e generazione.",
       "options": [
         {
           "type": "download",
@@ -188,7 +188,7 @@
       "protected": false,
       "slug": "paradosso-ai-literacy",
       "linkedArticleId": 12,
-      "abstract": "",
+      "abstract": "Siamo nel mezzo di una transizione epistemologica (spinta dell’intelligenza artificiale generativa) caratterizzata da una tensione fondamentale tra la rapidità con cui evolviamo nella nostra capacità tecnica di creare e utilizzare sistemi sempre più sofisticati e la lentezza con cui la nostra (pesonale ed organizzativa) comprensione concettuale, epistemologica e metacognitiva si adatta a questa nuova realtà tecnologica.\nStiamo vivendo un momento storico in cui i confini tra cognizione umana e computazione\nartificiale stanno diventando progressivamente sfumati nel senso fenomenologico e linguistico dell’esperienza quotidiana di interazione con questi sistemi, anche se le differenze ontologiche rimangono profonde, e questa sfumatura crea condizioni ideali per confusione che possono avere conseguenze pratiche significative.\nSolo attraverso uno sforzo coordinato e multidisciplinare che affronti esplicitamente questa transizione epistemologica nelle sue dimensioni cognitive, linguistiche, sociali, organizzative e tecnologiche e rifuggendo alle banalizzazioni marketing della “tecnologia a scaffale” sarà possibile trasformare una (empiricamente dimostrata) vulnerabilità in opportnità per lo sviluppo di forme mature, riflessive e criticamente informate di expertise umana nell’era dell’intelligenza artificiale generativa.",
       "options": [
         {
           "type": "download",
@@ -211,7 +211,7 @@
       "protected": true,
       "slug": "framework-integrazione-ai",
       "linkedArticleId": null,
-      "abstract": "",
+      "abstract": "Questo framework nasce dall'ossessione di chi, nel guidare quotidianamente le organizzazioni verso l'adozione dell'AI, ha visto ripetersi lo stesso paradosso: la distanza abissale tra l'eleganza teorica dei modelli esistenti e la loro concreta implementabilità. È il tentativo di rispondere a una domanda che risuona in ogni sala riunioni, in ogni progetto pilota, in ogni discussione strategica: come trasformare la complessità intrinseca dell'ecosistema AI in valore aziendale tangibile e sostenibile?\nIl modello proposto articola l'integrazione permanente dell'Intelligenza Artificiale attraverso una struttura bidimensionale che combina quattro livelli di integrazione (dallo scambio dati bi-direzionale all'integrazione definitoria dell'organizzazione) con quattro domini funzionali interconnessi (Risorse, Dati e Informazioni, Use Case, Strumenti).\nL'architettura distingue due paradigmi fondamentali di interazione uomo-AI: la Co-Intelligence, dove l'AI amplifica le capacità umane mantenendo il controllo decisionale nell'operatore, e la Cybernetic Workforce, dove l'integrazione uomo-macchina raggiunge livelli di sofisticazione tali da rendere indistinguibile il confine tra azione umana e artificiale. Questa dicotomia si materializza attraverso sette tipologie di use case (Personal Assistant Sincroni e Asincroni, Enhanced Use, RPA e Intelligent Automation, Analytics, Augmented Employee) implementabili attraverso strategie tecnologiche Make-Build/Configure-Buy.\nSe le organizzazioni vogliono veramente essere supportate dall'AI, è necessario garantire un accesso democratico alla tecnologia, per questo motivo il framework si completa con la definizione del Portale AI Aziendale, ambiente digitale unificato che garantisce l'accesso alle risorse AI attraverso cinque domini dell'esperienza: Marketplace degli Use Case, Prompt & Code Library, Accesso agli Strumenti Approvati, e le aree laterali di Risorse Documentali e Governance.\nLa peculiarità del modello vorrebbe risiedere nella sintesi tra rigore concettuale e pragmatismo operativo, offrendo alle organizzazioni non solo una mappa dell'ecosistema AI ma una guida concreta per navigarne la complessità, trasformando l'adozione dell'Intelligenza Artificiale da sperimentazione episodica a trasformazione sistemica e permanente. Il framework prova a distinguersi dalla letteratura esistente per la sua capacità di superare la frammentazione critica che caratterizza gli attuali approcci accademici e consulenziali. Mentre i framework esistenti tendono a eccellere in domini specialistici - rispettivamente focus su innovation distribuita, sviluppo di capabilities tecniche specifiche, o governance strutturata - pochi offrono l'integrazione sistemica necessaria per affrontare quella che la ricerca più recente definisce una \"crisis of fragmentation\" degli strumenti AI enterprise. La presente proposta colma questo gap fornendo un'architettura bidimensionale che orchestri simultaneamente livelli di integrazione progressivi con domini funzionali interdipendenti, trasformando la complessità dell'adozione AI da ostacolo epistemologico in vantaggio competitivo sistematizzabile.",
       "options": [
         {
           "type": "protected-download",
@@ -241,7 +241,7 @@
       "protected": false,
       "slug": "impatto-genai-didattica",
       "linkedArticleId": 14,
-      "abstract": "",
+      "abstract": "Ho cercato di condurre (nell'arco di due anni)  un'analisi approfondita dell'impatto trasformativo dell'Intelligenza Artificiale Generativa (GenAI) sul sistema dell'istruzione superiore, evidenziando il passaggio critico da un modello didattico standardizzato a nuovi paradigmi di apprendimento personalizzato e \"aumentato\". Attraverso una sintesi tra letteratura accademica e mie sperimentazioni sul campo condotte presso l'Università Cattolica, l'Università di Torino e l'ESCP , il lavoro esplora le dinamiche di interazione Uomo-Macchina, contrapponendo il modello \"Centauro\", caratterizzato da una divisione strategica del lavoro in cui l'umano mantiene il controllo alternandosi all'IA, al modello \"Cyborg\", che prevede una simbiosi profonda e continua su ogni sotto-compito. Tali modelli teorici trovano riscontro empirico nell'analisi di oltre 570.000 conversazioni studente-AI, che identificano pattern d'uso differenziati, dall'approccio passivo di \"oracolo\" a quello collaborativo di \"co-creatore\", dimostrando come le modalità più integrate e consapevoli generino risultati di apprendimento superiori. Il documento analizza inoltre la profonda ridefinizione dei ruoli in gioco. Da un lato, il docente evolve da dispensatore di conoscenza a \"facilitatore aumentato\" e \"direttore d'orchestra\" dell'esperienza formativa, assumendo la responsabilità critica della supervisione etica (human in the loop) per garantire la qualità dei contenuti e mitigare i rischi di bias e allucinazioni. Dall'altro, gli studenti sono chiamati a sviluppare nuove meta-competenze fondamentali, definite nel framework dell'AI Literacy, che includono non solo l'alfabetizzazione tecnica al prompting, ma soprattutto la capacità di valutazione critica e autoregolazione. Mi sento di sollevare un allarme sul rischio di assistere alla creazione di una \"piramide invertita\", ovvero la tendenza degli studenti a delegare all'IA competenze cognitive di ordine superiore (come analisi e creazione) a scapito delle basi fondamentali, compromettendo potenzialmente lo sviluppo cognitivo. Sul piano metodologico, l'articolo propone l'adozione di strategie didattiche innovative come la Flipped Classroom potenziata dall'IA e la pedagogia della co-creazione, in cui gli studenti partecipano attivamente alla progettazione degli assistenti virtuali e delle regole d'uso. Un concetto chiave rimarcato è quello del Cognitive Mirror, l'utilizzo dell'IA non per fornire risposte, ma per riflettere e strutturare il ragionamento dello studente, rendendo visibili passaggi logici e assunzioni implicite. Infine, il lavoro suggerisce un ripensamento radicale dei sistemi di valutazione, spostando il focus dal prodotto finale alla validazione del processo di pensiero, e conclude sottolineando l'urgenza di una risposta istituzionale sistemica. Per evitare di accentuare le disuguaglianze esistenti e per competere in uno scenario globale in rapida evoluzione, le università devono trascendere le sperimentazioni individuali per sviluppare una vera \"pedagogia digitale\" che integri l'IA come supplemento virtuoso e non come sostituto dell'interazione umana",
       "options": [
         {
           "type": "download",
@@ -264,7 +264,7 @@
       "protected": false,
       "slug": "paradosso-ai-literacy",
       "linkedArticleId": 9,
-      "abstract": "",
+      "abstract": "This paper starts from a mildly irritating (and, at times, counterintuitive) short circuit: the more technically proficient you become at using generative AI (prompting, parameters, APIs, and so on), the more likely you are to become less able to notice when you are wrong (or when you are delegating poorly). In other words, confidence increases, but the ability to monitor the quality of what you are doing does not necessarily increase with it, especially when tasks become genuinely complex.\nA further complication matters in real settings: most day-to-day AI use (including in companies) is concentrated on low-stakes, low-cognitive-value activities. Rather than training critical thinking and metacognition, this tends to reinforce comfortable routines: they work often enough that you start treating them as if they always work. The next step is predictable: you carry the same confidence (and the same level of vigilance) into domains where errors have a cost.\n\nIn the background sits a linguistic and conceptual problem: an anthropomorphic vocabulary that makes machines sound “human”, and, on the other side, a computational vocabulary that makes minds sound “machine-like”. This exchange is not innocent: it creates wrong expectations and epistemic confusion.\n\nIf this paper has a practical use, it is in the closing proposal: to prevent AI literacy from turning into a trap, training must go beyond technique and include (1) metacognitive calibration, (2) critical language literacy, and (3) concrete verification and validation habits embedded in everyday workflows.\n",
       "options": [
         {
           "type": "download",
@@ -282,7 +282,7 @@
       "protected": false,
       "slug": "illusione-ai-agentica",
       "linkedArticleId": 3,
-      "abstract": "",
+      "abstract": "his piece is the latest episode in my recurring series: I found a new buzzword and now I have to hoard papers, notes, and hype until my NAS starts judging me. The buzzword, today, is agentic AI. In the current discourse, ``agent'' is often a wonderfully convenient label: it sounds serious, sells even better, and makes us believe we are delegating to a digital colleague when, in practice, we are mostly stretching automation and, in some cases, making it more dangerous.\n\nSo I try to take a step back and ask what it really means to act on behalf of someone, by contrasting the contemporary enthusiasm for AI agents with an old friend from business economics: Agency Theory. If principals have always struggled to control their agents (from the East India companies to modern managers), adding a non-human agent that is opaque and has no intrinsic accountability should not help anyone sleep better.\n\nThe goal is not to demonize anything (I do not have the energy), but to clarify concepts, limits, and risks: misalignment, information asymmetries, competence illusions, monitoring costs, and above all that very comfortable temptation to say: ``the algorithm decided.'' Spoiler: responsibility stays with us.\n",
       "options": [
         {
           "type": "download",
@@ -300,7 +300,7 @@
       "protected": false,
       "slug": "impatto-genai-didattica",
       "linkedArticleId": 11,
-      "abstract": "",
+      "abstract": "Over the past two years, I have tried to conduct an in-depth analysis of the transformative impact of Generative Artificial Intelligence (GenAI) on higher education, highlighting a critical shift from standardized instruction toward new paradigms of personalized and \"augmented\" learning.\nBy combining academic literature with my own field experiments carried out at Università Cattolica, the University of Turin, and ESCP, this work explores human-machine interaction dynamics and contrasts two collaboration models.\nThe first is the \"Centaur\" model, characterized by a strategic division of labor in which the human remains in control while alternating with the AI.\nThe second is the \"Cyborg\" model, which implies a deep and continuous symbiosis across every sub-task.\nThese theoretical models find empirical support in the analysis of more than 570,000 student-AI conversations, which reveal differentiated usage patterns, from a passive \"oracle\" stance to a collaborative \"co-creator\" stance.\nThe evidence suggests that more integrated and intentional modes of use lead to better learning outcomes.\nThe document also examines the profound redefinition of roles. On one side, the instructor shifts from a dispenser of knowledge to an \"augmented facilitator\" and an \"orchestra conductor\" of the learning experience, taking on the critical responsibility of ethical supervision (human in the loop) to ensure content quality and mitigate risks such as bias and hallucinations.\nOn the other side, students are required to develop new foundational meta-skills, captured by the AI Literacy framework, which include not only technical prompting literacy but, above all, critical evaluation and self-regulation.\nI raise a warning about the risk of an \"inverted pyramid\": a tendency for students to delegate higher-order cognitive skills (such as analysis and creation) to AI while neglecting the fundamentals, potentially undermining cognitive development.\nMethodologically, the paper proposes innovative teaching strategies such as AI-enhanced Flipped Classroom and a pedagogy of co-creation, in which students actively participate in designing virtual assistants and usage rules.\nA key concept emphasized throughout is the Cognitive Mirror: using AI not to provide answers, but to reflect and structure students' reasoning, making logical steps and implicit assumptions visible.\nFinally, the work argues for a radical redesign of assessment systems, shifting the focus from the final product to the validation of the thinking process.\nIt concludes by underscoring the urgency of a systemic institutional response.\nTo avoid exacerbating existing inequalities and to compete in a rapidly evolving global landscape, universities must move beyond individual experimentation and develop a true \"digital pedagogy\" that integrates AI as a virtuous supplement, not as a substitute for human interaction.\n",
       "options": [
         {
           "type": "download",
@@ -318,7 +318,7 @@
       "protected": false,
       "slug": "genai-archetipo-scomposizione",
       "linkedArticleId": 8,
-      "abstract": "",
+      "abstract": "This is a (rather naive, but honest) attempt to convince myself that GenAI did not show\nup yesterday to ruin the party, but is mostly formalizing creative tricks humanity has been\nusing for a while—just without necessarily giving them fancy names.\nI start from my natural habitat (a serial hoarder of notes, links that die as 404s, and\nhalf-sketched ideas) and try to compare the mechanisms of transformers (segmentation,\nattention, recontextualization, reassembly) with four old artistic acquaintances: Chomskyan\ngenerative grammar, collage/cut-up, Eisensteinian montage, and above all musique concrète\nà la Schaeffer.\nThe hypothesis is simple: if today we are amazed that a machine can “generate”, it is also\nbecause we have conveniently forgotten how many times we have generated (by hand, on\ntape, with scissors and glue, or with rules) by remixing pre-existing material until something\nemerged that was not there before—or at least was not visible.",
       "options": [
         {
           "type": "download",
@@ -336,7 +336,7 @@
       "protected": false,
       "slug": "ai-pensa-per-noi",
       "linkedArticleId": 17,
-      "abstract": "",
+      "abstract": "Questo articolo prova a fare una cosa semplice (che poi semplice non è): smettere di discutere di AI come se le alternative fossero solo \"ci rende tutti più produttivi\" oppure \"ci ruba il lavoro\" e spostare la domanda dove fa un po' più male: cosa sta succedendo dentro la testa di chi la usa tutti i giorni? Quando deleghi a un modello generativo pezzi di scrittura, analisi e ragionamento, non stai solo risparmiando tempo: stai anche cambiando (a volte senza accorgertene) il modo con il quale cerhi e valuti informazioni ed  alternative e quanto ti fidi del tuo giudizio. \nPer capirci qualcosa metto in dialogo tre lenti recenti: il System 0 (l'AI che \"prepara\" il mondo prima che tu attivi System 1 e System 2), la \"Tri-System Theory\" (l'AI come terzo sistema cognitivo esterno, che può aiutarti o sostituirti a seconda di come la usi) e un filone più organizzativo che mostra un paradosso curioso (ma ampiamente verificabile): invece di alleggerire il lavoro, spesso lo intensifica. Letti insieme, questi pezzi suggeriscono un corto circuito auto-alimentante: più comfort e più capacità percepite, meno vigilanza e autonomia cognitiva reale, e in mezzo una bella dose di \\textit{automation bias}. Nella seconda parte mi prendo la libertà di fare quello che si fa quando la ricerca corre più lenta del fenomeno da ricercare (sapendo che il risultato durerà quanto gelato nel deserto): speculare onestamente. Propongo un modello a fasi della relazione cognitiva con l'AI e l'idea di \"resa cognitiva qualificata e consapevole\": non un invito alla resa, ma un tentativo di darle regole, confini e un minimo di dignità operativa (cioè: come usarla senza farci usare). Per lo meno ci ho provato\n",
       "options": [
         {
           "type": "download",
@@ -359,7 +359,7 @@
       "protected": false,
       "slug": "ai-pensa-per-noi",
       "linkedArticleId": 16,
-      "abstract": "",
+      "abstract": "This article tries to do a simple thing (which is not actually simple): stop discussing AI as if the alternatives were only \"it makes us all more productive\" or \"it steals our jobs\" and move the question to where it hurts a bit more: what is happening inside the head of those who use it every day? When you delegate pieces of writing, analysis, and reasoning to a generative model, you are not just saving time: you are also changing (sometimes without realizing it) the way you search for and evaluate information and alternatives and how much you trust your judgment.\nTo understand something, I put three recent lenses into dialogue: System 0 (the AI that \"prepares\" the world before you activate System 1 and System 2), the Tri-System Theory (AI as a third external cognitive system, which can help or replace you depending on how you use it) and a more organizational strand that shows a curious (but widely verifiable) paradox: instead of lightening work, it often intensifies it. Read together, these pieces suggest a self-feeding short circuit: more comfort and perceived capabilities, less vigilance and real cognitive autonomy, and in the middle a good dose of \\textit{automation bias}. In the second part, I take the liberty of doing what one does when research runs slower than the phenomenon to be researched (knowing that the result will last as long as ice cream in the desert): speculate honestly. I propose a phased model of the cognitive relationship with AI and the idea of \"qualified and conscious cognitive surrender\": not an invitation to surrender, but an attempt to give it rules, boundaries, and a minimum of operational dignity (that is: how to use it without letting it use us). At least I tried.",
       "options": [
         {
           "type": "download",
@@ -377,7 +377,7 @@
       "protected": true,
       "slug": "complessita-sistemi-di-senso",
       "linkedArticleId": null,
-      "abstract": "",
+      "abstract": "L'ebook per come è fino ad oggi: La prima parte completa, la seconda parte completa entrambe le parti con l'introduzione ... il resto è placeholder",
       "options": [
         {
           "type": "protected-download",
@@ -396,7 +396,7 @@
       "protected": false,
       "slug": "la-costituzione-dellai",
       "linkedArticleId": null,
-      "abstract": "",
+      "abstract": "La presente Costituzione è al tempo stesso un testo di principio e un portale di accesso operativo a tutta la “conoscenza” che ho accumulato in questi quasi tre anni di lavoro a fianco delle organizzazioni nei processi di A(i)doption. Ogni articolo enuncia un principio fondante del governo dell'AI in azienda ed indica contestualmente a quale fase e strumento del percorso A(I)doption quel principio si traduce in azione concreta.\nIl framework A(I)doption articola il percorso di trasformazione AI in quattro fasi integrate  (AI Maturity Model, Upskilling & Adoption, Discovery Use Case, Pilot & Transform )ed in dieci step operativi che trasformano le condizioni di partenza in risultati misurabili. La Costituzione non sostituisce questo percorso: lo fonda, lo legittima stabilendone i confini.\nIl presente documento nasce da una domanda semplice nella formulazione, ma radicale nelle implicazioni: è sufficiente una policy per governare l'intelligenza artificiale in azienda? La risposta che emerge dall'analisi comparata dei modelli di adozione più avanzati è scevra d’ogni equivoco: è dannatamente indispensabile, ma non è sufficiente.\n\nUna policy regola comportamenti, accessi, diritti e processi. Una costituzione, invece, stabilisce i principi che precedono ed anticipano (quasi come un quadro etico di riferimento) qualsiasi regola, i diritti che nessuna norma operativa può comprimere, i poteri che devono essere riconosciuti e bilanciati, e le garanzie che rendono il sistema legittimo agli occhi di chi lo abita e lo attraversa. La differenza non è di forma: è di natura. Questo testo si ispira consapevolmente alla struttura della nostra Costituzione italiana, non per esercizio retorico, ma perché quella struttura ha dimostrato di saper tenere insieme, in modo duraturo e intelligente, visione e norma con principi e ordinamento nel rispetto di diritti e doveri. La stessa architettura è ciò di cui le organizzazioni hanno bisogno quando l'AI smette di essere un progetto e diventa un regime operativo permanente.\n\nLa struttura adottata, costituita da Preambolo, Principi fondamentali, Parte I sui diritti e doveri, Parte II sull'ordinamento e sul ciclo di vita dei sistemi AI, Disposizioni finali, è volutamente calibrata per anticipare la maturità organizzativa, non per fotografarla nella sua essenza. Il tono è istituzionale ma non per forza notarile. La provocazione risiede nella tesi: l'AI in azienda è una questione di ordinamento prima ancora che di tecnologia.",
       "options": [
         {
           "type": "download",
