@@ -167,7 +167,7 @@ Sitemap: https://writing.rbovetti.com/sitemap.xml
   "@type": "Person",
   "name": "Riccardo Bovetti",
   "url": "https://writing.rbovetti.com",
-  "sameAs": ["https://www.linkedin.com/in/[DA INSERIRE: LinkedIn handle]"],
+  "sameAs": ["https://www.linkedin.com/in/rbovetti"],
   "knowsAbout": ["Artificial Intelligence", "AI Governance", "Finance Technology", "Philosophy of Technology"]
 }
 ```
