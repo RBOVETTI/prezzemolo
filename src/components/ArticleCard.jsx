@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function ArticleCard({ article, onOpenCarousel, onOpenLeadGen }) {
   const languageLabel = article.language === 'it' ? 'Italiano' : 'English';
 
@@ -29,7 +31,14 @@ export default function ArticleCard({ article, onOpenCarousel, onOpenLeadGen }) 
 
       <div className="p-8 flex flex-col flex-grow">
         <div className="mb-4">
-          <h2 className="text-xl font-serif font-medium text-text-primary mb-3">{article.title}</h2>
+          <Link
+            to={`/articles/${article.slug}`}
+            className="hover:text-accent-warm transition-colors"
+          >
+            <h2 className="text-xl font-serif font-medium text-text-primary mb-3">
+              {article.title}
+            </h2>
+          </Link>
 
         <div className="flex gap-3 mb-4 flex-wrap">
           <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-accent-warm/10 text-accent-warm border border-accent-warm">
