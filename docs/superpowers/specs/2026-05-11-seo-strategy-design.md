@@ -35,9 +35,10 @@ Il sito è una React SPA con una sola route indicizzabile (`/`). Google vede un'
 
 Lo slug è generato dal titolo principale (italiano se disponibile, inglese altrimenti) tramite:
 - lowercase
-- rimozione accenti e caratteri speciali
+- rimozione accenti, parentesi e caratteri speciali (inclusi `(`, `)`, `"`, `'`)
 - spazi → trattini
-- es. "A(I)gents per la funzione Finance" → `ai-gents-per-la-funzione-finance`
+- trattini multipli consecutivi → singolo trattino
+- es. "A(I)gents per la funzione Finance" → `aigents-per-la-funzione-finance`
 
 Lo slug viene aggiunto al campo di ogni articolo in `articles.json`.
 
@@ -97,6 +98,10 @@ Ottimizzata per ricerche nominative: "Riccardo Bovetti AI", "Riccardo Bovetti pa
 
 ## SEO tecnico
 
+### Immagini OG per articolo
+
+La cartella `covers/` non contiene ancora immagini per ogni articolo (attualmente solo `MAPPACONCETTUALE-CAROSELLO.jpg`). Per tutti gli articoli senza copertina dedicata, l'OG image fa fallback su `Image_og.jpg` (già presente in `public/`). La creazione di immagini di copertina per singolo articolo è opzionale e può essere affrontata in Sprint 3.
+
 ### Meta tag dinamici
 
 Ogni pagina articolo genera i propri tag a partire dai dati in `articles.json`:
@@ -112,6 +117,7 @@ Ogni pagina articolo genera i propri tag a partire dai dati in `articles.json`:
 <meta property="og:description" content="[abstract troncato]" />
 <meta property="og:url" content="https://writing.rbovetti.com/articles/[slug]" />
 <meta property="og:image" content="https://writing.rbovetti.com/covers/[slug].jpg" />
+<!-- fallback a Image_og.jpg se non esiste un'immagine specifica per l'articolo -->
 
 <!-- Canonical -->
 <link rel="canonical" href="https://writing.rbovetti.com/articles/[slug]" />
@@ -161,7 +167,7 @@ Sitemap: https://writing.rbovetti.com/sitemap.xml
   "@type": "Person",
   "name": "Riccardo Bovetti",
   "url": "https://writing.rbovetti.com",
-  "sameAs": ["https://www.linkedin.com/in/[handle]"],
+  "sameAs": ["https://www.linkedin.com/in/[DA INSERIRE: LinkedIn handle]"],
   "knowsAbout": ["Artificial Intelligence", "AI Governance", "Finance Technology", "Philosophy of Technology"]
 }
 ```
