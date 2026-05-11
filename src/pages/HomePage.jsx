@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import SEOHead from '../components/SEOHead';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Filters from '../components/Filters';
@@ -85,6 +86,10 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-bg">
+      <SEOHead
+        description="Raccolta di paper e riflessioni su intelligenza artificiale, etica, filosofia e pensiero critico. Di Riccardo Bovetti."
+        url="/"
+      />
       <Header />
 
       <main className="container mx-auto px-5 max-w-6xl flex-grow pt-32 md:pt-36">

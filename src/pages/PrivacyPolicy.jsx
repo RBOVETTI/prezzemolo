@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEOHead from '../components/SEOHead';
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-bg py-12">
+      <SEOHead
+        title="Privacy Policy"
+        description="Informativa sulla privacy e cookie policy del sito writing.rbovetti.com di Riccardo Bovetti."
+        url="/privacy-policy"
+      />
       <div className="container mx-auto px-5 max-w-4xl">
         <Link to="/" className="text-accent-warm hover:underline mb-8 inline-block">
           ← Torna alla home

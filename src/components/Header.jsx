@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export default function Header() {
   const navigate = useNavigate();
@@ -19,6 +19,14 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-3 ml-4 flex-shrink-0">
+          <Link
+            to="/about"
+            title="About"
+            className="text-text-secondary hover:text-accent-warm transition-colors text-sm font-serif"
+          >
+            About
+          </Link>
+
           {/* Bottone admin */}
           <button
             onClick={() => navigate('/admin')}
