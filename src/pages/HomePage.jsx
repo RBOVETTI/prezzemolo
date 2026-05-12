@@ -92,7 +92,7 @@ export default function HomePage() {
       />
       <Header />
 
-      <main className="container mx-auto px-5 max-w-6xl flex-grow pt-32 md:pt-36">
+      <main className="container mx-auto px-5 max-w-6xl flex-grow pt-52">
         <Filters
           topics={topics}
           selectedTopic={selectedTopic}

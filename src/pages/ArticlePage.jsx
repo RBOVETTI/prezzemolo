@@ -71,7 +71,7 @@ export default function ArticlePage() {
 
       <div className="min-h-screen flex flex-col bg-bg-primary">
         <Header />
-        <main className="flex-grow max-w-3xl mx-auto w-full px-6 pt-32 md:pt-36 pb-16">
+        <main className="flex-grow max-w-3xl mx-auto w-full px-6 pt-52 pb-16">
 
           <Link to="/" className="text-accent-warm text-sm hover:underline mb-8 inline-block">
             ← Tutti gli articoli

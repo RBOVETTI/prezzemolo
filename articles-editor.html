@@ -281,7 +281,20 @@
 
         <div class="form-group">
           <label>Titolo *</label>
-          <input type="text" id="articleTitle" required>
+          <input type="text" id="articleTitle" required oninput="onTitleInput()">
+        </div>
+
+        <div class="form-group">
+          <label>Slug (URL) *</label>
+          <div style="display:flex; gap:8px">
+            <input type="text" id="articleSlug" required placeholder="es. aigents-funzione-finance" style="flex:1">
+            <button type="button" class="btn btn-secondary" onclick="autoSlug()" style="white-space:nowrap">⚡ Auto</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Abstract (testo SEO, HTML consentito)</label>
+          <textarea id="articleAbstract" style="min-height:120px" placeholder="Testo di presentazione dell'articolo, visibile nella pagina di dettaglio..."></textarea>
         </div>
 
         <div class="form-group">
@@ -295,9 +308,14 @@
             <input type="text" id="articleTopic" required placeholder="es. A(I)GENTS, GENAI, IT ORG">
           </div>
           <div class="form-group">
-            <label>Immagine (path)</label>
-            <input type="text" id="articleImage" placeholder="/images/articles/example.jpg">
+            <label>ID articolo collegato (bilingue)</label>
+            <input type="number" id="articleLinkedId" min="1" placeholder="es. 2 (lascia vuoto se nessuno)">
           </div>
+        </div>
+
+        <div class="form-group">
+          <label>Immagine (path)</label>
+          <input type="text" id="articleImage" placeholder="/images/articles/example.jpg">
         </div>
 
         <div class="form-group">
@@ -337,6 +355,28 @@
   <script>
     let articles = { articles: [] };
     let editingIndex = -1;
+
+    function slugify(text) {
+      return text
+        .normalize('NFD')
+        .replace(/[̀-ͯ]/g, '')
+        .toLowerCase()
+        .replace(/[()'"«»“”‘’]/g, '')
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function autoSlug() {
+      const title = document.getElementById('articleTitle').value;
+      if (title) document.getElementById('articleSlug').value = slugify(title);
+    }
+
+    function onTitleInput() {
+      if (editingIndex === -1) autoSlug();
+    }
 
     // Load file
     document.getElementById('loadFile').addEventListener('change', function(e) {
@@ -381,7 +421,7 @@
               <span class="badge badge-topic">${article.topic}</span>
               <span class="badge badge-lang">${article.language === 'it' ? '🇮🇹 IT' : '🇬🇧 EN'}</span>
               ${article.protected ? '<span class="badge badge-protected">🔒 Protetto</span>' : ''}
-              <span style="margin-left:10px">ID: ${article.id} • ${article.options?.length || 0} opzioni</span>
+              <span style="margin-left:10px">ID: ${article.id} • ${article.options?.length || 0} opzioni${article.slug ? ' • /' + article.slug : ''}${article.linkedArticleId ? ' • ⇄ ID ' + article.linkedArticleId : ''}</span>
             </div>
           </div>
           <div class="article-actions">
@@ -408,6 +448,9 @@
       document.getElementById('editIndex').value = '';
       document.getElementById('optionsList').innerHTML = '';
       document.getElementById('protectedFields').style.display = 'none';
+      document.getElementById('articleSlug').value = '';
+      document.getElementById('articleAbstract').value = '';
+      document.getElementById('articleLinkedId').value = '';
 
       // Set next available ID
       const maxId = articles.articles.reduce((max, a) => Math.max(max, a.id || 0), 0);
@@ -425,9 +468,12 @@
       document.getElementById('editIndex').value = index;
       document.getElementById('articleId').value = article.id;
       document.getElementById('articleTitle').value = article.title;
+      document.getElementById('articleSlug').value = article.slug || '';
+      document.getElementById('articleAbstract').value = article.abstract || '';
       document.getElementById('articleDescription').value = article.description;
       document.getElementById('articleTopic').value = article.topic;
       document.getElementById('articleLanguage').value = article.language;
+      document.getElementById('articleLinkedId').value = article.linkedArticleId ?? '';
       document.getElementById('articleImage').value = article.image || '';
       document.getElementById('articleProtected').checked = article.protected || false;
       document.getElementById('articleValueProp').value = article.valueProposition || '';
@@ -513,12 +559,16 @@
       }));
 
       // Build article object
+      const linkedIdRaw = document.getElementById('articleLinkedId').value.trim();
       const article = {
         id: parseInt(document.getElementById('articleId').value),
         title: document.getElementById('articleTitle').value,
+        slug: document.getElementById('articleSlug').value.trim(),
+        abstract: document.getElementById('articleAbstract').value.trim() || null,
         description: document.getElementById('articleDescription').value,
         topic: document.getElementById('articleTopic').value,
         language: document.getElementById('articleLanguage').value,
+        linkedArticleId: linkedIdRaw ? parseInt(linkedIdRaw) : null,
         protected: document.getElementById('articleProtected').checked,
         options: options
       };

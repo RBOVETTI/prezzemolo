@@ -53,7 +53,7 @@ export default function AboutPage() {
 
       <div className="min-h-screen flex flex-col bg-bg-primary">
         <Header />
-        <main className="flex-grow max-w-3xl mx-auto w-full px-6 pt-32 md:pt-36 pb-16">
+        <main className="flex-grow max-w-3xl mx-auto w-full px-6 pt-52 pb-16">
 
           <h1 className="text-4xl font-serif font-medium text-text-primary mb-6">
             Riccardo Bovetti
