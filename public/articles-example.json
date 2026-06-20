@@ -69,5 +69,24 @@
         }
       ]
     }
+     ,{
+      "id": 18,
+      "title": "Complessità e Sistemi di senso",
+      "slug": "complessita-sistemi-di-senso",
+      "abstract": "Ed un altra grande \"milestone\" è raggiunta: la terza parte è completa, con anche la sua introduzione ... Siamo a quota 121 (pagine) .. quindi è già un bel leggere ... Prossimi passi: revisione critica di tutte le tre parti per eliminare ridondanze, perfezionare i passaggi tra un capitolo e l'altro, limare gli spigoli. .. e poi si parte con l'ultima parte (che sarà la penultima perchè le due appendici che sono dei divertimenti .. avranno il loro spazio)",
+      "description": "L'ebook per come è fino ad oggi: La prima parte completa, la seconda parte completa entrambe le parti con l'introduzione ... il resto è placeholder",
+      "topic": "AI",
+      "language": "it",
+      "linkedArticleId": null,
+      "protected": true,
+      "options": [
+        {
+          "type": "protected-download",
+          "label": "Scarica l'EBOOK in divenire ",
+          "file": "/articles/Complessita&SistemidiSenso.pdf"
+        }
+      ],
+      "valueProposition": "Questo documento è parte di un progetto \"collettivo\" di scrittura che porterà nel giro di qualche mese alla pubblicazione di un EBOOK sul tema della trasformazione socio-tecnologica dell'AI. Per rispetto ai diversi contributori voglio tenere tracciati gli accessi dei \"lettori\" per potermi confrontare in modo collaborativo"
+    }
   ]
 }
