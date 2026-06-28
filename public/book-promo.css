@@ -1,0 +1,246 @@
+.rb-book-promo,
+.rb-book-modal {
+  --rb-book-bg: #fbf7f1;
+  --rb-book-surface: #ffffff;
+  --rb-book-text: #1a1a1a;
+  --rb-book-muted: #5a5148;
+  --rb-book-accent: #8b2635;
+  --rb-book-line: rgba(27, 54, 93, 0.16);
+  box-sizing: border-box;
+  color: var(--rb-book-text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.rb-book-promo *,
+.rb-book-modal * {
+  box-sizing: border-box;
+}
+
+.rb-book-promo {
+  position: sticky;
+  top: 0;
+  z-index: 3000;
+  width: 100%;
+  background: var(--rb-book-bg);
+  border-bottom: 1px solid var(--rb-book-line);
+  box-shadow: 0 10px 24px rgba(27, 54, 93, 0.08);
+}
+
+.rb-book-promo__inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(1180px, 100%);
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 10px clamp(16px, 4vw, 40px);
+  color: inherit;
+  text-decoration: none;
+}
+
+.rb-book-promo__cover,
+.rb-book-modal__cover {
+  flex: 0 0 auto;
+  display: block;
+  width: 42px;
+  height: 56px;
+  border: 1px solid rgba(139, 38, 53, 0.24);
+  border-radius: 4px;
+  background: var(--rb-book-surface);
+  box-shadow: 0 10px 18px rgba(27, 54, 93, 0.12);
+  object-fit: cover;
+  object-position: center;
+}
+
+.rb-book-promo__copy {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.rb-book-promo__kicker,
+.rb-book-modal__kicker {
+  color: var(--rb-book-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.rb-book-promo__copy strong {
+  color: var(--rb-book-text);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.rb-book-promo__copy span:last-child {
+  color: var(--rb-book-muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.rb-book-promo__cta,
+.rb-book-modal__cta {
+  flex: 0 0 auto;
+  margin-left: auto;
+  padding: 8px 14px;
+  border: 1px solid var(--rb-book-accent);
+  border-radius: 999px;
+  color: var(--rb-book-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.rb-book-promo[hidden],
+.rb-book-modal[hidden] {
+  display: none !important;
+}
+
+.rb-book-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.rb-book-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 18, 24, 0.58);
+  backdrop-filter: blur(4px);
+}
+
+.rb-book-modal__dialog {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: min(680px, calc(100vh - 48px));
+  overflow: auto;
+  padding: clamp(24px, 5vw, 38px);
+  border: 1px solid var(--rb-book-line);
+  border-radius: 8px;
+  background: var(--rb-book-surface);
+  box-shadow: 0 28px 80px rgba(15, 18, 24, 0.28);
+}
+
+.rb-book-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--rb-book-line);
+  border-radius: 999px;
+  background: var(--rb-book-surface);
+  color: var(--rb-book-text);
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+}
+
+.rb-book-modal__link {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 22px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.rb-book-modal__cover {
+  width: 150px;
+  height: 210px;
+}
+
+.rb-book-modal__content {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding-right: 28px;
+}
+
+.rb-book-modal__content h2 {
+  margin: 0;
+  color: var(--rb-book-text);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.rb-book-modal__content p {
+  margin: 0;
+  color: var(--rb-book-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.rb-book-modal__cta {
+  justify-self: start;
+  margin-left: 0;
+  margin-top: 6px;
+}
+
+.rb-book-modal-open,
+.rb-book-modal-open body {
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .rb-book-promo__inner {
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 0;
+    padding: 9px 14px;
+  }
+
+  .rb-book-promo__cover {
+    width: 34px;
+    height: 46px;
+  }
+
+  .rb-book-promo__copy strong {
+    font-size: 0.92rem;
+  }
+
+  .rb-book-promo__copy span:last-child {
+    font-size: 0.8rem;
+  }
+
+  .rb-book-promo__cta {
+    display: none;
+  }
+
+  .rb-book-modal {
+    align-items: end;
+    padding: 14px;
+  }
+
+  .rb-book-modal__dialog {
+    max-height: calc(100vh - 28px);
+    padding: 24px 20px;
+  }
+
+  .rb-book-modal__link {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .rb-book-modal__cover {
+    width: 96px;
+    height: 134px;
+  }
+
+  .rb-book-modal__content {
+    padding-right: 0;
+  }
+}

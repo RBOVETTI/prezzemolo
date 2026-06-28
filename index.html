@@ -26,9 +26,67 @@
       gtag('js', new Date());
       gtag('config', 'G-HBVTX0EF5C');
     </script>
+    <link rel="stylesheet" href="/book-promo.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <aside class="rb-book-promo" data-rb-book-promo data-rb-book-site="Prezzemolo" data-rb-book-lang="it" aria-label="Appena pubblicato">
+      <a class="rb-book-promo__inner" href="https://www.amazon.it/dp/B0H6KR2LD8" target="_blank" rel="noopener noreferrer">
+        <img class="rb-book-promo__cover" data-rb-book-cover src="/cover-marketing.jpg" alt="" loading="lazy" width="300" height="450">
+        <span class="rb-book-promo__copy">
+          <span class="rb-book-promo__kicker">APPENA PUBBLICATO</span>
+          <strong>Complessità &amp; Sistemi di Senso</strong>
+          <span>L'attesa è finita: "Complessità &amp; Sistemi di Senso" è adesso disponibile su AMAZON sia in formato cartaceo che in EBOOK.</span>
+        </span>
+        <span class="rb-book-promo__cta">Scopri</span>
+      </a>
+    </aside>
+
+    <aside class="rb-book-promo" data-rb-book-promo data-rb-book-site="Prezzemolo" data-rb-book-lang="en" aria-label="Just published" hidden>
+      <a class="rb-book-promo__inner" href="https://www.amazon.it/dp/B0H6KR2LD8" target="_blank" rel="noopener noreferrer">
+        <img class="rb-book-promo__cover" data-rb-book-cover src="/cover-marketing-en.png" alt="" loading="lazy" width="300" height="450">
+        <span class="rb-book-promo__copy">
+          <span class="rb-book-promo__kicker">JUST PUBLISHED</span>
+          <strong>Complexity &amp; Systems of Meaning</strong>
+          <span>The wait is over: "Complexity &amp; Systems of Meaning" is now available on AMAZON in both paperback and EBOOK format.</span>
+        </span>
+        <span class="rb-book-promo__cta">Discover</span>
+      </a>
+    </aside>
+
+    <div class="rb-book-modal" data-rb-book-modal data-rb-book-lang="it" hidden>
+      <div class="rb-book-modal__backdrop" data-rb-book-modal-close></div>
+      <section class="rb-book-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="rb-book-modal-title-it">
+        <button class="rb-book-modal__close" type="button" data-rb-book-modal-close aria-label="Chiudi finestra">&times;</button>
+        <a class="rb-book-modal__link" href="https://www.amazon.it/dp/B0H6KR2LD8" target="_blank" rel="noopener noreferrer">
+          <img class="rb-book-modal__cover" data-rb-book-cover src="/cover-marketing.jpg" alt="Copertina di Complessità &amp; Sistemi di Senso" loading="lazy" width="300" height="450">
+          <span class="rb-book-modal__content">
+            <span class="rb-book-modal__kicker">APPENA PUBBLICATO</span>
+            <h2 id="rb-book-modal-title-it">Complessità &amp; Sistemi di Senso</h2>
+            <p>L'attesa è finita: "Complessità &amp; Sistemi di Senso" è adesso disponibile su AMAZON sia in formato cartaceo che in EBOOK.</p>
+            <span class="rb-book-modal__cta">Vai al libro</span>
+          </span>
+        </a>
+      </section>
+    </div>
+
+    <div class="rb-book-modal" data-rb-book-modal data-rb-book-lang="en" hidden>
+      <div class="rb-book-modal__backdrop" data-rb-book-modal-close></div>
+      <section class="rb-book-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="rb-book-modal-title-en">
+        <button class="rb-book-modal__close" type="button" data-rb-book-modal-close aria-label="Close window">&times;</button>
+        <a class="rb-book-modal__link" href="https://www.amazon.it/dp/B0H6KR2LD8" target="_blank" rel="noopener noreferrer">
+          <img class="rb-book-modal__cover" data-rb-book-cover src="/cover-marketing-en.png" alt="Cover of Complexity &amp; Systems of Meaning" loading="lazy" width="300" height="450">
+          <span class="rb-book-modal__content">
+            <span class="rb-book-modal__kicker">JUST PUBLISHED</span>
+            <h2 id="rb-book-modal-title-en">Complexity &amp; Systems of Meaning</h2>
+            <p>The wait is over: "Complexity &amp; Systems of Meaning" is now available on AMAZON in both paperback and EBOOK format.</p>
+            <span class="rb-book-modal__cta">Open book</span>
+          </span>
+        </a>
+      </section>
+    </div>
+
+<div id="root"></div>
+    <script src="/book-promo.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
