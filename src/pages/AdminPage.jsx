@@ -25,7 +25,7 @@ export default function AdminPage() {
       setLoading(true);
       try {
         const [leadsRes, articlesRes] = await Promise.all([
-          fetch('/api/get-leads'),
+          fetch('/api/get-leads', { credentials: 'same-origin' }),
           fetch('/articles.json'),
         ]);
         const leads = await leadsRes.json();
@@ -63,10 +63,12 @@ export default function AdminPage() {
       const res = await fetch('/api/verify-admin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
         body: JSON.stringify({ password }),
       });
       if (res.ok) {
         setAuthenticated(true);
+        setPassword('');
       } else {
         setAuthError('Password non valida');
       }
@@ -94,7 +96,10 @@ export default function AdminPage() {
     try {
       const res = await fetch('/api/send-update', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({
           articleTitle: selectedArticle,
           pdfUrl,

@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import { requireAdminSession } from './admin-auth.js';
 
 export const config = { api: { bodyParser: true } };
 
@@ -19,6 +20,7 @@ export default async function handler(req, res) {
 
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+  if (!requireAdminSession(req, res)) return;
 
   const { articleTitle, pdfUrl, message, leads } = req.body || {};
 

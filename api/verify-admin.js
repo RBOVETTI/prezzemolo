@@ -1,4 +1,5 @@
 import crypto from 'crypto';
+import { createAdminSessionCookie } from './admin-auth.js';
 
 export const config = { api: { bodyParser: true } };
 
@@ -20,6 +21,10 @@ export default function handler(req, res) {
     const b = Buffer.from(process.env.ADMIN_PASSWORD);
     if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) {
       return res.status(401).json({ error: 'Password non valida' });
+    }
+    const sessionCookie = createAdminSessionCookie();
+    if (sessionCookie) {
+      res.setHeader('Set-Cookie', sessionCookie);
     }
     return res.status(200).json({ ok: true });
   } catch {

@@ -1,4 +1,5 @@
 import { google } from 'googleapis';
+import { requireAdminSession } from './admin-auth.js';
 
 export const config = { api: { bodyParser: false } };
 
@@ -10,6 +11,7 @@ export default async function handler(req, res) {
 
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' });
+  if (!requireAdminSession(req, res)) return;
 
   try {
     const auth = new google.auth.GoogleAuth({
