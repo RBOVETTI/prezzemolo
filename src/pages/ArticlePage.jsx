@@ -136,7 +136,7 @@ export default function ArticlePage() {
         onClose={() => setCarouselModal({ isOpen: false, title: '', file: '' })}
         title={carouselModal.title}
       >
-        <PDFCarousel file={carouselModal.file} />
+        <PDFCarousel pdfUrl={carouselModal.file} title={carouselModal.title} />
       </Modal>
 
       {leadGenModal.isOpen && (
