@@ -5,6 +5,9 @@ export default function Footer() {
         <p className="text-text-secondary text-sm">
           &copy; 2026 Riccardo Bovetti - Tutti i diritti riservati
         </p>
+        <a href="https://rbovetti.com/ai-transparency/" target="_blank" rel="noreferrer" className="text-text-secondary text-sm hover:text-text-primary">
+          AI Transparency
+        </a>
       </div>
     </footer>
   );
