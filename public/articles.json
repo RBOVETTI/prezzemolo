@@ -431,6 +431,35 @@
           "file": "/articles/METABOLISMO-CAROSELLO.pdf"
         }
       ]
+    },
+    {
+      "id": 21,
+      "title": "Agenti AI - 2026",
+      "slug": "agenti-ai-2026",
+      "abstract": "Il mercato investe negli agenti AI con una convinzione quasi assoluta, ma la distanza fra la sperimentazione e l'adozione matura resta ampia, e si misura nella capacità di un'organizzazione di trasformare l'entusiasmo in una disciplina di delega governata. Questo articolo propone un percorso esemplificativo in sette step, costruito intorno a un unico caso di riferimento (la chiusura mensile e il reporting di controllo di gestione di un gruppo multi business unit), per chiarire che cosa sia davvero un agente AI e come se ne governi l'adozione in azienda. La prima parte fissa le coordinate concettuali, sostituendo la contrapposizione fra chatbot e agente con la distinzione, più utile, fra workflow e agente, e introducendo il continuum dell'autonomia, l'harness e i cinque livelli di un sistema agentico. La seconda ricostruisce l'infrastruttura comune a qualunque piattaforma: il ciclo agentico e il tool use, la mappa terminologica che separa prompt, istruzioni persistenti, skill, tool, connettori, Model Context Protocol e plugin, la differenza fra contesto, memoria e RAG, i sistemi multi agente, la verifica dell'esito e i meccanismi di governance (sandbox, permessi, approvazioni, hook, prompt injection). Le parti successive esaminano i tre ecosistemi che definiscono oggi lo stato dell'arte, Anthropic, OpenAI e Microsoft, e ne propongono una lettura comparata su convergenze, divergenze di filosofia, portabilità reale e modelli di prezzo. La conclusione individua nella progettazione di lavoro delegabile, e non nella competenza tecnica, la nuova responsabilità manageriale.",
+      "description": "Una monografia in sette parti su che cosa sia oggi un agente AI e su che cosa significhi, concretamente, delegargli del lavoro in un'organizzazione. Il testo distingue anzitutto il workflow dall'agente, mostra dove risieda davvero l'agentività (non nel modello, ma nel software che lo circonda) e ricostruisce l'infrastruttura comune a tutte le piattaforme, dal ciclo agentico ai connettori, dalle skill alla memoria, fino ai meccanismi di verifica e di governance. Su queste basi confronta i tre ecosistemi di Anthropic, OpenAI e Microsoft, valutando che cosa sia realmente portabile fra loro e quali modelli di prezzo entrino nel business case. Il filo conduttore è un unico caso di riferimento, la chiusura mensile di controllo di gestione, che rende verificabile ogni concetto introdotto.",
+      "topic": "GENAI",
+      "language": "it",
+      "linkedArticleId": null,
+      "protected": true,
+      "options": [
+        {
+          "type": "protected-download",
+          "label": "Scarica il Documento",
+          "file": "/articles/AGENTI2026.pdf"
+        },
+        {
+          "type": "carousel",
+          "label": "Sfoglia il Carosello",
+          "file": "/articles/AGENTI2026-CAROSELLO.pdf"
+        }
+      ],
+      "valueProposition": "Il compendio di conoscenze alla data di Settembre 2026 su Architetture agentiche, differenze tra ecosistemi Antrophic, OpenAi e Microsoft e concetti di FinOps per valutare l'impatto economico degli agenti",
+      "benefits": [
+        "Una guida chiara e completa ai concetti essenziali",
+        "Un confronto senza fronzoli tra le offerte dei diversi \"editori\"",
+        "Un primo elemento di indirizzo sui temi del costo"
+      ]
     }
   ]
 }
