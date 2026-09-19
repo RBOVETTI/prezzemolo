@@ -141,6 +141,7 @@ export default function ArticlePage() {
 
       {leadGenModal.isOpen && (
         <LeadGenModal
+          isOpen={leadGenModal.isOpen}
           article={leadGenModal.article}
           onClose={() => setLeadGenModal({ isOpen: false, article: null })}
         />

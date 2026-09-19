@@ -139,12 +139,12 @@ NEXT_PUBLIC_SITE_URL=https://tuosito.vercel.app
   "options": [
     {
       "type": "download",
-      "label": "Download PDF",
+      "label": "Scarica l'articolo",
       "file": "/articles/file.pdf"
     },
     {
       "type": "carousel",
-      "label": "Sfoglia",
+      "label": "Sfoglia il carosello",
       "file": "/articles/file-carosello.pdf"
     }
   ]
@@ -171,7 +171,7 @@ NEXT_PUBLIC_SITE_URL=https://tuosito.vercel.app
   "options": [
     {
       "type": "protected-download",
-      "label": "Scarica il documento",
+      "label": "Scarica l'articolo",
       "file": "/articles/file-protetto.pdf"
     }
   ]

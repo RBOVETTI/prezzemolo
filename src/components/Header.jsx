@@ -1,7 +1,8 @@
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 export default function Header() {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-bg border-b border-accent-cold/10 py-8 z-40">
@@ -19,6 +20,29 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-3 ml-4 flex-shrink-0">
+          {/* Freccia indietro alla home (solo fuori dalla home) */}
+          {pathname !== '/' && (
+            <Link
+              to="/"
+              title="Torna alla pagina iniziale"
+              aria-label="Torna alla pagina iniziale"
+              className="text-text-secondary hover:text-accent-warm transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-5 h-5 md:w-6 md:h-6"
+              >
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </Link>
+          )}
+
           <Link
             to="/about"
             title="About"
