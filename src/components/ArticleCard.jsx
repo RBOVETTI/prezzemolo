@@ -17,7 +17,7 @@ export default function ArticleCard({ article, onOpenCarousel, onOpenLeadGen }) 
   };
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:-translate-y-1 hover:shadow-xl flex flex-col border border-accent-cold/10">
+    <div className="bg-white overflow-hidden transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0_#121417] flex flex-col border-2 border-text-primary">
       {/* Article Image */}
       {article.image && (
         <div className="w-full h-48 overflow-hidden">

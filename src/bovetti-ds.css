@@ -1,0 +1,41 @@
+/* Bovetti Design System — tokens + base (source: claude.ai/design project "Bovetti Design System").
+   Keep this file identical across all rbovetti.com sites. */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+:root{
+--ink-900:#121417;--ink-800:#1d2026;--ink-700:#2b2f36;--ink-500:#575c66;--ink-400:#7d828b;--ink-300:#a6a9af;--ink-200:#cfccc4;--ink-100:#e4e0d6;
+--paper-0:#ffffff;--paper-50:#f7f4ed;--paper-100:#eeeae0;--paper-200:#e3ddcf;
+--signal-300:#ff8559;--signal-500:#e8501f;--signal-600:#c23e12;--signal-700:#9a300c;
+--blu-300:#8aa3ff;--blu-400:#5b7cf0;--blu-600:#1f45c9;--blu-700:#16339a;
+--ocra-200:#fbe3a2;--ocra-400:#f2b42c;--ocra-600:#b8820a;
+--verde-500:#3a8f5c;--verde-600:#2c7049;
+--rosso-500:#d9342b;--rosso-600:#b3241c;
+--surface-page:var(--paper-50);--surface-card:var(--paper-0);--surface-sunken:var(--paper-100);--surface-inverse:var(--ink-900);--surface-inverse-2:var(--ink-800);--surface-highlight:var(--ocra-400);
+--text-heading:var(--ink-900);--text-body:var(--ink-700);--text-muted:var(--ink-500);--text-on-inverse:var(--paper-50);--text-on-inverse-muted:var(--ink-300);--text-accent:var(--signal-600);--text-accent-on-inverse:var(--signal-300);
+--accent:var(--signal-500);--accent-hover:var(--signal-600);--link:var(--blu-600);--link-hover:var(--blu-700);--link-on-inverse:var(--blu-300);
+--border-strong:var(--ink-900);--border-default:var(--ink-200);--border-subtle:var(--ink-100);--border-on-inverse:var(--ink-700);
+--focus:var(--blu-400);--error:var(--rosso-600);--error-border:var(--rosso-500);--success:var(--verde-600);--warning:var(--ocra-600);
+
+--font-display:'Archivo','Helvetica Neue',Arial,sans-serif;
+--font-serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+--font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+--fs-100:12px;--fs-200:14px;--fs-300:16px;--fs-400:18px;--fs-500:20px;--fs-600:24px;--fs-700:32px;--fs-800:44px;--fs-900:64px;--fs-1000:88px;
+--fw-regular:400;--fw-medium:500;--fw-semibold:600;--fw-bold:700;--fw-black:850;
+--lh-tight:0.95;--lh-snug:1.15;--lh-normal:1.45;--lh-relaxed:1.6;
+--ls-tight:-0.02em;--ls-normal:0;--ls-label:0.08em;--ls-wide:0.14em;
+--type-label:var(--fw-semibold) var(--fs-100)/1 var(--font-mono);
+--type-small:var(--fw-regular) var(--fs-300)/var(--lh-normal) var(--font-serif);
+--type-body:var(--fw-regular) var(--fs-400)/var(--lh-relaxed) var(--font-serif);
+--type-lead:var(--fw-regular) var(--fs-500)/var(--lh-normal) var(--font-serif);
+
+--sp-50:2px;--sp-100:4px;--sp-200:8px;--sp-250:12px;--sp-300:16px;--sp-400:24px;--sp-500:32px;--sp-600:48px;--sp-700:64px;--sp-800:96px;--sp-900:128px;
+--container:1200px;--container-narrow:760px;--measure:66ch;--gutter:24px;--header-h:72px;
+
+--bw-hair:1px;--bw-2:2px;--bw-3:3px;--bw-rule:6px;
+--radius-0:0;--radius-1:2px;--radius-round:999px;
+--shadow-hard-sm:3px 3px 0 var(--ink-900);--shadow-hard:6px 6px 0 var(--ink-900);--shadow-hard-accent:6px 6px 0 var(--signal-500);
+--shadow-overlay:0 24px 60px -20px rgba(18,20,23,.45);--scrim:rgba(18,20,23,.72);
+--ease-out:cubic-bezier(.2,.7,.2,1);--dur-fast:120ms;--dur-base:200ms;--dur-slow:400ms;
+--focus-ring:0 0 0 3px var(--paper-0),0 0 0 6px var(--focus);
+}
+::selection{background:var(--ocra-400);color:var(--ink-900)}
+:focus-visible{outline:none;box-shadow:var(--focus-ring)}
